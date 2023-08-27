@@ -1,0 +1,12 @@
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.exe.config
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.exe
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.pdb
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.xml
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.AssemblyReference.cache
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Form1.resources
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Resources.resources
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.GenerateResource.cache
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.CoreCompileInputs.cache
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.exe
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.xml
+C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.pdb
