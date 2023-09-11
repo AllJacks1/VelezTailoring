@@ -1,5 +1,5 @@
-﻿Public Class Form1
-    Private Sub Label3_Click(sender As Object, e As EventArgs)
+﻿Public Class Dashboard
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -9,11 +9,5 @@
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Dim dash = New Dashboard
-        dash.Show()
-        Me.Close()
     End Sub
 End Class
