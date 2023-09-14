@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+
+
     Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -11,9 +13,23 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Dim dash = New Dashboard
-        dash.Show()
-        Me.Close()
+    Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
+        Dim username, password As String
+        username = username_txt.Text
+        password = password_txt.Text
+
+        If String.IsNullOrEmpty(username_txt.Text) Then
+            MsgBox("Enter your username!", vbCritical, "Velez Tailoring")
+        ElseIf String.IsNullOrEmpty(password_txt.Text) Then
+            MsgBox("Enter your password!", vbCritical, "Velez Tailoring")
+        Else
+            user_login(username, password)
+            username_txt.Clear()
+            password_txt.Clear()
+
+        End If
+
     End Sub
+
+
 End Class
