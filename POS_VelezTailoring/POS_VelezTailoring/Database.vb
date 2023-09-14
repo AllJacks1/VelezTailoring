@@ -31,7 +31,7 @@ Module Database
     Public Sub user_login(ByVal username As String, ByVal password As String)
         Try
             open_conn()
-            Dim sql_command As New SQLiteCommand($"SELECT * FROM user_tbl WHERE user_name={username} And user_password{password}", sqlite_conn)
+            Dim sql_command As New SQLiteCommand($"SELECT * FROM user_tbl WHERE `user_name` = '{username}' And `user_password` = '{password}';", sqlite_conn)
             Dim reader As SQLiteDataReader = sql_command.ExecuteReader
             If reader.Read Then
                 MsgBox("REGISTERED SUCCESSFULLY", vbInformation)
@@ -53,7 +53,7 @@ Module Database
     Public Sub user_register(ByVal username As String, ByVal password As String)
         Try
             open_conn()
-            Dim sql_command As New SQLiteCommand($"INSERT INTO user_tbl (`user_name`,`user_password`) VALUES ({username}, {password})", sqlite_conn)
+            Dim sql_command As New SQLiteCommand($"INSERT INTO user_tbl (`user_name`,`user_password`) VALUES ('{username}', '{password}');", sqlite_conn)
             sql_command.ExecuteNonQuery()
             MsgBox("REGISTERED SUCCESSFULLY", vbInformation)
 

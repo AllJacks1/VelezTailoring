@@ -27,3 +27,13 @@ C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_V
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.CopyComplete
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Dashboard.resources
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.UI_DESIGN.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x86\sqlite3.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x64\sqlite3.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.xml
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.xml

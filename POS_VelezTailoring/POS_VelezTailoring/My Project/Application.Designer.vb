@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.POS_VelezTailoring.UI_DESIGN
+            Me.MainForm = Global.POS_VelezTailoring.Form1
         End Sub
     End Class
 End Namespace
