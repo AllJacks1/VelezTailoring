@@ -129,12 +129,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="sales_panel.Designer.vb">
+      <DependentUpon>sales_panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sales_panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UI_DESIGN.Designer.vb">
       <DependentUpon>UI_DESIGN.vb</DependentUpon>
     </Compile>
     <Compile Include="UI_DESIGN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserControlManager.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
@@ -148,6 +155,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales_panel.resx">
+      <DependentUpon>sales_panel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_DESIGN.resx">
       <DependentUpon>UI_DESIGN.vb</DependentUpon>

@@ -37,3 +37,4 @@ C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_V
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.xml
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.xml
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.sales_panel.resources
