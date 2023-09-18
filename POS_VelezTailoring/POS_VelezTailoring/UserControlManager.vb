@@ -14,15 +14,19 @@
     End Sub
 
     Public Sub showOrders()
+        Dim ordersControl = New orders_panel
         Dashboard.btn_orders.Checked = True
         Dashboard.btn_transaction.Checked = False
         Dashboard.btn_sales.Checked = False
+        addUserControl(ordersControl)
     End Sub
 
     Public Sub showTransactions()
+        Dim transactionControl = New transaction_panel
         Dashboard.btn_orders.Checked = False
         Dashboard.btn_transaction.Checked = True
         Dashboard.btn_sales.Checked = False
+        addUserControl(transactionControl)
     End Sub
 
 
