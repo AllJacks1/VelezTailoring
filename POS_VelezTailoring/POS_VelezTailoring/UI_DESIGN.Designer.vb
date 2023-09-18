@@ -24,27 +24,27 @@ Partial Class UI_DESIGN
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,229 +87,40 @@ Partial Class UI_DESIGN
         Me.Panel1.Size = New System.Drawing.Size(1400, 645)
         Me.Panel1.TabIndex = 1
         '
-        'Button1
+        'Button4
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(374, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(340, 82)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "SALES"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(856, 542)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(379, 82)
+        Me.Button4.TabIndex = 28
+        Me.Button4.Text = "SAVE ORDER"
+        Me.Button4.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Guna2DateTimePicker1
         '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(711, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(340, 82)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "ORDERS"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Guna2DateTimePicker1.Checked = True
+        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
+        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(904, 423)
+        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(484, 45)
+        Me.Guna2DateTimePicker1.TabIndex = 27
+        Me.Guna2DateTimePicker1.Value = New Date(2023, 9, 12, 23, 23, 19, 510)
         '
-        'Button3
+        'Label7
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(1048, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(340, 82)
-        Me.Button3.TabIndex = 7
-        Me.Button3.Text = "TRANSACTION"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(27, 131)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(186, 25)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Customer Name:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(27, 188)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(105, 25)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Address:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(914, 131)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(188, 25)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Contact Number:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(25, 248)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(152, 25)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Product type:"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.RadioButton1.Location = New System.Drawing.Point(90, 295)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(157, 28)
-        Me.RadioButton1.TabIndex = 15
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Uniform (Top)"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.RadioButton2.Location = New System.Drawing.Point(294, 295)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(184, 28)
-        Me.RadioButton2.TabIndex = 16
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Uniform (Buttom)"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.RadioButton3.Location = New System.Drawing.Point(512, 295)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(90, 28)
-        Me.RadioButton3.TabIndex = 17
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Others"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'Guna2TextBox1
-        '
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(639, 287)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(749, 44)
-        Me.Guna2TextBox1.TabIndex = 18
-        '
-        'Guna2TextBox2
-        '
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(138, 179)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = ""
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(749, 44)
-        Me.Guna2TextBox2.TabIndex = 19
-        '
-        'Guna2TextBox3
-        '
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(219, 121)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderText = ""
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(668, 44)
-        Me.Guna2TextBox3.TabIndex = 20
-        '
-        'Guna2TextBox4
-        '
-        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = ""
-        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(919, 179)
-        Me.Guna2TextBox4.Name = "Guna2TextBox4"
-        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox4.PlaceholderText = ""
-        Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(469, 44)
-        Me.Guna2TextBox4.TabIndex = 21
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(27, 360)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(204, 25)
-        Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Order Description:"
-        '
-        'Guna2TextBox5
-        '
-        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox5.DefaultText = ""
-        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(32, 402)
-        Me.Guna2TextBox5.Name = "Guna2TextBox5"
-        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderText = ""
-        Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(599, 222)
-        Me.Guna2TextBox5.TabIndex = 23
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(634, 360)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(250, 25)
-        Me.Label6.TabIndex = 24
-        Me.Label6.Text = "Downpayment amount:"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(637, 433)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(178, 25)
+        Me.Label7.TabIndex = 26
+        Me.Label7.Text = "Order Deadline:"
         '
         'Guna2TextBox6
         '
@@ -330,40 +141,229 @@ Partial Class UI_DESIGN
         Me.Guna2TextBox6.Size = New System.Drawing.Size(484, 44)
         Me.Guna2TextBox6.TabIndex = 25
         '
-        'Label7
+        'Label6
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(637, 433)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(178, 25)
-        Me.Label7.TabIndex = 26
-        Me.Label7.Text = "Order Deadline:"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(634, 360)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(250, 25)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "Downpayment amount:"
         '
-        'Guna2DateTimePicker1
+        'Guna2TextBox5
         '
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(904, 423)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(484, 45)
-        Me.Guna2DateTimePicker1.TabIndex = 27
-        Me.Guna2DateTimePicker1.Value = New Date(2023, 9, 12, 23, 23, 19, 510)
+        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox5.DefaultText = ""
+        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox5.Location = New System.Drawing.Point(32, 402)
+        Me.Guna2TextBox5.Name = "Guna2TextBox5"
+        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox5.PlaceholderText = ""
+        Me.Guna2TextBox5.SelectedText = ""
+        Me.Guna2TextBox5.Size = New System.Drawing.Size(599, 222)
+        Me.Guna2TextBox5.TabIndex = 23
         '
-        'Button4
+        'Label5
         '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(856, 542)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(379, 82)
-        Me.Button4.TabIndex = 28
-        Me.Button4.Text = "SAVE ORDER"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(27, 360)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(204, 25)
+        Me.Label5.TabIndex = 22
+        Me.Label5.Text = "Order Description:"
+        '
+        'Guna2TextBox4
+        '
+        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox4.DefaultText = ""
+        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(919, 179)
+        Me.Guna2TextBox4.Name = "Guna2TextBox4"
+        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox4.PlaceholderText = ""
+        Me.Guna2TextBox4.SelectedText = ""
+        Me.Guna2TextBox4.Size = New System.Drawing.Size(469, 44)
+        Me.Guna2TextBox4.TabIndex = 21
+        '
+        'Guna2TextBox3
+        '
+        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox3.DefaultText = ""
+        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox3.Location = New System.Drawing.Point(219, 121)
+        Me.Guna2TextBox3.Name = "Guna2TextBox3"
+        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox3.PlaceholderText = ""
+        Me.Guna2TextBox3.SelectedText = ""
+        Me.Guna2TextBox3.Size = New System.Drawing.Size(668, 44)
+        Me.Guna2TextBox3.TabIndex = 20
+        '
+        'Guna2TextBox2
+        '
+        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox2.DefaultText = ""
+        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(138, 179)
+        Me.Guna2TextBox2.Name = "Guna2TextBox2"
+        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox2.PlaceholderText = ""
+        Me.Guna2TextBox2.SelectedText = ""
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(749, 44)
+        Me.Guna2TextBox2.TabIndex = 19
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(639, 287)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(749, 44)
+        Me.Guna2TextBox1.TabIndex = 18
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.RadioButton3.Location = New System.Drawing.Point(512, 295)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(90, 28)
+        Me.RadioButton3.TabIndex = 17
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Others"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.RadioButton2.Location = New System.Drawing.Point(294, 295)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(184, 28)
+        Me.RadioButton2.TabIndex = 16
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Uniform (Buttom)"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.RadioButton1.Location = New System.Drawing.Point(90, 295)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(157, 28)
+        Me.RadioButton1.TabIndex = 15
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Uniform (Top)"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(25, 248)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(152, 25)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "Product type:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(914, 131)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(188, 25)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Contact Number:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(27, 188)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(105, 25)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Address:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(27, 131)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(227, 25)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Customer Namessss"
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(1048, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(340, 82)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "TRANSACTION"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(711, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(340, 82)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "ORDERS"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(374, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(340, 82)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "SALES"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'UI_DESIGN
         '
