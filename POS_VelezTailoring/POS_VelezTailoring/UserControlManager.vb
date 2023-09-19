@@ -1,4 +1,6 @@
-﻿Module UserControlManager
+﻿Imports System.Data.SQLite
+
+Module UserControlManager
 
     Public Sub addUserControl(userControl As UserControl)
         Dashboard.dashCanvas.Controls.Clear()
@@ -14,11 +16,13 @@
     End Sub
 
     Public Sub showOrders()
-        Dim ordersControl = New orders_panel
+        Dim orderControl = New orders_panel
         Dashboard.btn_orders.Checked = True
         Dashboard.btn_transaction.Checked = False
         Dashboard.btn_sales.Checked = False
-        addUserControl(ordersControl)
+        addUserControl(orderControl)
+        displayOrders(orderControl)
+
     End Sub
 
     Public Sub showTransactions()

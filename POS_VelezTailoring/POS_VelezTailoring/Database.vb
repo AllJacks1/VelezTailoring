@@ -80,7 +80,7 @@ Module Database
             Dim prod_id As Integer = CInt(sql_command2.ExecuteScalar())
 
             'Insert into orders_tbl using the retrieved customer_id and product_id
-            Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{Date.Now.ToString}', '{estimated_time}')", sqlite_conn)
+            Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{Date.Now}', '{estimated_time}')", sqlite_conn)
             sql_command3.ExecuteNonQuery()
 
             MsgBox("TRANSACTION COMPLETE.", vbInformation)
@@ -90,7 +90,21 @@ Module Database
             close_conn()
         End Try
     End Sub
+    Public Sub displayOrders(ByVal usercontrol As orders_panel)
+        Try
+            open_conn()
+            Dim adapter As New SQLiteDataAdapter("SELECT orders_tbl.order_id as 'Order ID',customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status', product_tbl.prod_price as 'Overall price',orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as 'Order deadline' 
+            FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id WHERE order_status = 'unfulfilled'", sqlite_conn)
+            Dim table As New DataTable
+            adapter.Fill(table)
+            usercontrol.display_orderDGV.DataSource = table
+        Catch ex As SQLiteException
 
+        Finally
+            close_conn()
+
+        End Try
+    End Sub
 
 
 End Module
