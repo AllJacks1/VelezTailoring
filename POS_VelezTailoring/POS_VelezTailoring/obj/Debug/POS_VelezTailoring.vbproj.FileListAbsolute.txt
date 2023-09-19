@@ -71,3 +71,6 @@ E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_Vel
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.exe
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.xml
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.pdb
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.view_record.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView1.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView2.resources

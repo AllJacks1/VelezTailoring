@@ -33,5 +33,18 @@ Module UserControlManager
         addUserControl(transactionControl)
     End Sub
 
+    Public Sub showOrderView1(ByVal viewRecord As view_record)
+        Dim orderView1 = New orderView1
+        viewRecord.order_viewPanel.Controls.Clear()
+        viewRecord.order_viewPanel.Controls.Add(orderView1)
+        orderView1.BringToFront()
+    End Sub
+    Public Sub showOrderView2(ByVal viewRecord As view_record)
+        Dim orderView2 = New orderView2
+        viewRecord.order_viewPanel.Controls.Clear()
+        viewRecord.order_viewPanel.Controls.Add(orderView2)
+        orderView2.BringToFront()
+    End Sub
+
 
 End Module

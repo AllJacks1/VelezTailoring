@@ -28,7 +28,7 @@ Partial Class orders_panel
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_view = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.display_orderDGV = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -40,7 +40,7 @@ Partial Class orders_panel
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(49, 86)
+        Me.Label1.Location = New System.Drawing.Point(49, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 29)
         Me.Label1.TabIndex = 3
@@ -60,30 +60,30 @@ Partial Class orders_panel
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(200, 64)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(181, 28)
         Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = "Please enter customer name here..."
         Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(1090, 72)
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(1109, 50)
         Me.Guna2TextBox1.TabIndex = 2
         '
-        'Guna2Button1
+        'btn_view
         '
-        Me.Guna2Button1.BorderRadius = 15
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(1342, 320)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(289, 109)
-        Me.Guna2Button1.TabIndex = 17
-        Me.Guna2Button1.Text = "VIEW"
+        Me.btn_view.BorderRadius = 15
+        Me.btn_view.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_view.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_view.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_view.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_view.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
+        Me.btn_view.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.btn_view.ForeColor = System.Drawing.Color.White
+        Me.btn_view.Location = New System.Drawing.Point(23, 630)
+        Me.btn_view.Name = "btn_view"
+        Me.btn_view.Size = New System.Drawing.Size(519, 109)
+        Me.btn_view.TabIndex = 17
+        Me.btn_view.Text = "VIEW"
         '
         'Guna2Button2
         '
@@ -95,9 +95,9 @@ Partial Class orders_panel
         Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(1342, 462)
+        Me.Guna2Button2.Location = New System.Drawing.Point(563, 630)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(289, 109)
+        Me.Guna2Button2.Size = New System.Drawing.Size(519, 109)
         Me.Guna2Button2.TabIndex = 18
         Me.Guna2Button2.Text = "UPDATE"
         '
@@ -111,9 +111,9 @@ Partial Class orders_panel
         Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Location = New System.Drawing.Point(1342, 604)
+        Me.Guna2Button4.Location = New System.Drawing.Point(1102, 630)
         Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(289, 109)
+        Me.Guna2Button4.Size = New System.Drawing.Size(519, 109)
         Me.Guna2Button4.TabIndex = 19
         Me.Guna2Button4.Text = "REMOVE"
         '
@@ -121,19 +121,19 @@ Partial Class orders_panel
         '
         Me.display_orderDGV.AllowUserToAddRows = False
         Me.display_orderDGV.AllowUserToDeleteRows = False
+        Me.display_orderDGV.AllowUserToResizeColumns = False
         Me.display_orderDGV.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.display_orderDGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.display_orderDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.display_orderDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
@@ -141,14 +141,15 @@ Partial Class orders_panel
         Me.display_orderDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(2)
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.display_orderDGV.DefaultCellStyle = DataGridViewCellStyle3
         Me.display_orderDGV.GridColor = System.Drawing.Color.Black
-        Me.display_orderDGV.Location = New System.Drawing.Point(200, 204)
+        Me.display_orderDGV.Location = New System.Drawing.Point(23, 87)
         Me.display_orderDGV.Name = "display_orderDGV"
         Me.display_orderDGV.ReadOnly = True
         Me.display_orderDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -161,7 +162,9 @@ Partial Class orders_panel
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.display_orderDGV.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.display_orderDGV.RowHeadersVisible = False
-        Me.display_orderDGV.Size = New System.Drawing.Size(1090, 509)
+        Me.display_orderDGV.RowHeadersWidth = 45
+        Me.display_orderDGV.RowTemplate.Height = 40
+        Me.display_orderDGV.Size = New System.Drawing.Size(1598, 537)
         Me.display_orderDGV.TabIndex = 20
         Me.display_orderDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.display_orderDGV.ThemeStyle.AlternatingRowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -181,7 +184,7 @@ Partial Class orders_panel
         Me.display_orderDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.display_orderDGV.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.display_orderDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.display_orderDGV.ThemeStyle.RowsStyle.Height = 22
+        Me.display_orderDGV.ThemeStyle.RowsStyle.Height = 40
         Me.display_orderDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.display_orderDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
@@ -193,7 +196,7 @@ Partial Class orders_panel
         Me.Controls.Add(Me.display_orderDGV)
         Me.Controls.Add(Me.Guna2Button4)
         Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.btn_view)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2TextBox1)
         Me.Name = "orders_panel"
@@ -206,7 +209,7 @@ Partial Class orders_panel
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_view As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents display_orderDGV As Guna.UI2.WinForms.Guna2DataGridView
