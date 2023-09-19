@@ -22,44 +22,44 @@ Partial Class transaction_panel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.customer_nametxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.customer_numtxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.prod_typetxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.etc_dtp = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.save_ordertxt = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.overall_pricetxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.down_paymenttxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.SuspendLayout()
         '
-        'Guna2TextBox1
+        'customer_nametxt
         '
-        Me.Guna2TextBox1.Animated = True
-        Me.Guna2TextBox1.BorderRadius = 15
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(42, 101)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = "Please enter customer name here..."
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(904, 72)
-        Me.Guna2TextBox1.TabIndex = 0
+        Me.customer_nametxt.Animated = True
+        Me.customer_nametxt.BorderRadius = 15
+        Me.customer_nametxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.customer_nametxt.DefaultText = ""
+        Me.customer_nametxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.customer_nametxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.customer_nametxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.customer_nametxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.customer_nametxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.customer_nametxt.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.customer_nametxt.ForeColor = System.Drawing.Color.Black
+        Me.customer_nametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.customer_nametxt.Location = New System.Drawing.Point(42, 101)
+        Me.customer_nametxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.customer_nametxt.Name = "customer_nametxt"
+        Me.customer_nametxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.customer_nametxt.PlaceholderText = "Please enter customer name here..."
+        Me.customer_nametxt.SelectedText = ""
+        Me.customer_nametxt.Size = New System.Drawing.Size(904, 72)
+        Me.customer_nametxt.TabIndex = 0
         '
         'Label1
         '
@@ -83,28 +83,28 @@ Partial Class transaction_panel
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Contact Number:"
         '
-        'Guna2TextBox3
+        'customer_numtxt
         '
-        Me.Guna2TextBox3.Animated = True
-        Me.Guna2TextBox3.BorderRadius = 15
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(39, 221)
-        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderText = "Please enter contact number here..."
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(907, 72)
-        Me.Guna2TextBox3.TabIndex = 4
+        Me.customer_numtxt.Animated = True
+        Me.customer_numtxt.BorderRadius = 15
+        Me.customer_numtxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.customer_numtxt.DefaultText = ""
+        Me.customer_numtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.customer_numtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.customer_numtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.customer_numtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.customer_numtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.customer_numtxt.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.customer_numtxt.ForeColor = System.Drawing.Color.Black
+        Me.customer_numtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.customer_numtxt.Location = New System.Drawing.Point(39, 221)
+        Me.customer_numtxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.customer_numtxt.Name = "customer_numtxt"
+        Me.customer_numtxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.customer_numtxt.PlaceholderText = "Please enter contact number here..."
+        Me.customer_numtxt.SelectedText = ""
+        Me.customer_numtxt.Size = New System.Drawing.Size(907, 72)
+        Me.customer_numtxt.TabIndex = 4
         '
         'Label4
         '
@@ -117,28 +117,28 @@ Partial Class transaction_panel
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Product type:"
         '
-        'Guna2TextBox4
+        'prod_typetxt
         '
-        Me.Guna2TextBox4.BorderRadius = 15
-        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = ""
-        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2TextBox4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(998, 101)
-        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Guna2TextBox4.Multiline = True
-        Me.Guna2TextBox4.Name = "Guna2TextBox4"
-        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox4.PlaceholderText = "Please enter description here..."
-        Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(613, 450)
-        Me.Guna2TextBox4.TabIndex = 8
+        Me.prod_typetxt.BorderRadius = 15
+        Me.prod_typetxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.prod_typetxt.DefaultText = ""
+        Me.prod_typetxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.prod_typetxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.prod_typetxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prod_typetxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prod_typetxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prod_typetxt.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.prod_typetxt.ForeColor = System.Drawing.Color.Black
+        Me.prod_typetxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prod_typetxt.Location = New System.Drawing.Point(998, 101)
+        Me.prod_typetxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.prod_typetxt.Multiline = True
+        Me.prod_typetxt.Name = "prod_typetxt"
+        Me.prod_typetxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.prod_typetxt.PlaceholderText = "Please enter description here..."
+        Me.prod_typetxt.SelectedText = ""
+        Me.prod_typetxt.Size = New System.Drawing.Size(613, 450)
+        Me.prod_typetxt.TabIndex = 8
         '
         'Label5
         '
@@ -162,20 +162,21 @@ Partial Class transaction_panel
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "Downpayment Amount:"
         '
-        'Guna2DateTimePicker1
+        'etc_dtp
         '
-        Me.Guna2DateTimePicker1.BorderRadius = 15
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(249, 376)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(486, 72)
-        Me.Guna2DateTimePicker1.TabIndex = 14
-        Me.Guna2DateTimePicker1.Value = New Date(2023, 9, 18, 21, 9, 38, 473)
+        Me.etc_dtp.BorderRadius = 15
+        Me.etc_dtp.Checked = True
+        Me.etc_dtp.CustomFormat = ""
+        Me.etc_dtp.FillColor = System.Drawing.Color.White
+        Me.etc_dtp.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.etc_dtp.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.etc_dtp.Location = New System.Drawing.Point(249, 376)
+        Me.etc_dtp.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.etc_dtp.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.etc_dtp.Name = "etc_dtp"
+        Me.etc_dtp.Size = New System.Drawing.Size(486, 72)
+        Me.etc_dtp.TabIndex = 14
+        Me.etc_dtp.Value = New Date(2023, 9, 18, 21, 9, 38, 473)
         '
         'Label7
         '
@@ -188,21 +189,21 @@ Partial Class transaction_panel
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Estimated Time to Complete:"
         '
-        'Guna2Button1
+        'save_ordertxt
         '
-        Me.Guna2Button1.BorderRadius = 15
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(1001, 605)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(610, 103)
-        Me.Guna2Button1.TabIndex = 16
-        Me.Guna2Button1.Text = "SAVE ORDER"
+        Me.save_ordertxt.BorderRadius = 15
+        Me.save_ordertxt.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.save_ordertxt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.save_ordertxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.save_ordertxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.save_ordertxt.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
+        Me.save_ordertxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.save_ordertxt.ForeColor = System.Drawing.Color.White
+        Me.save_ordertxt.Location = New System.Drawing.Point(1001, 605)
+        Me.save_ordertxt.Name = "save_ordertxt"
+        Me.save_ordertxt.Size = New System.Drawing.Size(610, 103)
+        Me.save_ordertxt.TabIndex = 16
+        Me.save_ordertxt.Text = "SAVE ORDER"
         '
         'Label2
         '
@@ -215,71 +216,71 @@ Partial Class transaction_panel
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Text: 250/250"
         '
-        'Guna2TextBox2
+        'overall_pricetxt
         '
-        Me.Guna2TextBox2.Animated = True
-        Me.Guna2TextBox2.BorderRadius = 15
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(42, 557)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = "Enter amount here..."
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(372, 72)
-        Me.Guna2TextBox2.TabIndex = 18
+        Me.overall_pricetxt.Animated = True
+        Me.overall_pricetxt.BorderRadius = 15
+        Me.overall_pricetxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.overall_pricetxt.DefaultText = ""
+        Me.overall_pricetxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.overall_pricetxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.overall_pricetxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.overall_pricetxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.overall_pricetxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.overall_pricetxt.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.overall_pricetxt.ForeColor = System.Drawing.Color.Black
+        Me.overall_pricetxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.overall_pricetxt.Location = New System.Drawing.Point(42, 557)
+        Me.overall_pricetxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.overall_pricetxt.Name = "overall_pricetxt"
+        Me.overall_pricetxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.overall_pricetxt.PlaceholderText = "Enter amount here..."
+        Me.overall_pricetxt.SelectedText = ""
+        Me.overall_pricetxt.Size = New System.Drawing.Size(372, 72)
+        Me.overall_pricetxt.TabIndex = 18
         '
-        'Guna2TextBox5
+        'down_paymenttxt
         '
-        Me.Guna2TextBox5.Animated = True
-        Me.Guna2TextBox5.BorderRadius = 15
-        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox5.DefaultText = ""
-        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2TextBox5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(574, 557)
-        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Guna2TextBox5.Name = "Guna2TextBox5"
-        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderText = "Enter amount here..."
-        Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(372, 72)
-        Me.Guna2TextBox5.TabIndex = 19
+        Me.down_paymenttxt.Animated = True
+        Me.down_paymenttxt.BorderRadius = 15
+        Me.down_paymenttxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.down_paymenttxt.DefaultText = ""
+        Me.down_paymenttxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.down_paymenttxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.down_paymenttxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.down_paymenttxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.down_paymenttxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.down_paymenttxt.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.down_paymenttxt.ForeColor = System.Drawing.Color.Black
+        Me.down_paymenttxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.down_paymenttxt.Location = New System.Drawing.Point(574, 557)
+        Me.down_paymenttxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.down_paymenttxt.Name = "down_paymenttxt"
+        Me.down_paymenttxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.down_paymenttxt.PlaceholderText = "Enter amount here..."
+        Me.down_paymenttxt.SelectedText = ""
+        Me.down_paymenttxt.Size = New System.Drawing.Size(372, 72)
+        Me.down_paymenttxt.TabIndex = 19
         '
         'transaction_panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Controls.Add(Me.Guna2TextBox5)
-        Me.Controls.Add(Me.Guna2TextBox2)
+        Me.Controls.Add(Me.down_paymenttxt)
+        Me.Controls.Add(Me.overall_pricetxt)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.save_ordertxt)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Guna2DateTimePicker1)
+        Me.Controls.Add(Me.etc_dtp)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Guna2TextBox4)
+        Me.Controls.Add(Me.prod_typetxt)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Guna2TextBox3)
+        Me.Controls.Add(Me.customer_numtxt)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.Controls.Add(Me.customer_nametxt)
         Me.Name = "transaction_panel"
         Me.Size = New System.Drawing.Size(1657, 757)
         Me.ResumeLayout(False)
@@ -287,18 +288,18 @@ Partial Class transaction_panel
 
     End Sub
 
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents customer_nametxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents customer_numtxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents prod_typetxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents etc_dtp As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Label7 As Label
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents save_ordertxt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents overall_pricetxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents down_paymenttxt As Guna.UI2.WinForms.Guna2TextBox
 End Class

@@ -41,3 +41,33 @@ C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_V
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.transaction_panel.resources
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orders_panel.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x86\sqlite3.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x64\sqlite3.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.exe.config
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.exe
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.pdb
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.xml
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\FontAwesome.Sharp.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\Guna.UI2.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.EF6.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.Linq.dll
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.xml
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.xml
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.AssemblyReference.cache
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Dashboard.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Form1.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.Resources.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orders_panel.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.sales_panel.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.transaction_panel.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.UI_DESIGN.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.GenerateResource.cache
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.CoreCompileInputs.cache
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.CopyComplete
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.exe
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.xml
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.pdb

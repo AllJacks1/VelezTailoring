@@ -65,4 +65,32 @@ Module Database
         End Try
     End Sub
 
+    'TRANSACTION
+
+    Public Sub transaction(ByVal name As String, ByVal contact_number As String, ByVal product_type As String, ByVal overall_price As Integer, ByVal down_payment As Integer, ByVal estimated_time As String)
+        Try
+            open_conn()
+
+            'Insert into customer_tbl and retrieve the auto-incremented customer_id
+            Dim sql_command As New SQLiteCommand($"INSERT INTO customer_tbl ('customer_name','customer_number') VALUES ('{name}','{contact_number}'); SELECT last_insert_rowid();", sqlite_conn)
+            Dim customer_id As Integer = CInt(sql_command.ExecuteScalar())
+
+            'Insert into product_tbl and retrieve the auto-incremented prod_id
+            Dim sql_command2 As New SQLiteCommand($"INSERT INTO product_tbl ('prod_type','prod_price') VALUES ('{product_type}','{overall_price}'); SELECT last_insert_rowid();", sqlite_conn)
+            Dim prod_id As Integer = CInt(sql_command2.ExecuteScalar())
+
+            'Insert into orders_tbl using the retrieved customer_id and product_id
+            Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{Date.Now.ToString}', '{estimated_time}')", sqlite_conn)
+            sql_command3.ExecuteNonQuery()
+
+            MsgBox("TRANSACTION COMPLETE.", vbInformation)
+        Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical)
+        Finally
+            close_conn()
+        End Try
+    End Sub
+
+
+
 End Module
