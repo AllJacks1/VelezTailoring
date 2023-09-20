@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SQLite
 Imports System.Windows.Controls
+Imports Guna.UI2.WinForms
 
 Module Database
 
@@ -93,6 +94,7 @@ Module Database
             close_conn()
         End Try
     End Sub
+
     Public Sub displayOrders(ByVal usercontrol As orders_panel)
         Try
             open_conn()
@@ -105,6 +107,24 @@ Module Database
 
         Finally
             close_conn()
+
+        End Try
+    End Sub
+
+    Public Sub searchRecord(ByVal txtSearch As String, ByVal dgTable As Guna2DataGridView)
+        Try
+            open_conn()
+            Dim searchString As String = txtSearch
+            Dim sql As String = "SELECT orders_tbl.order_id as 'Order ID', customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status',
+        product_tbl.prod_price as 'Overall price', orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as
+        'Order deadline' FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = 
+        product_tbl.prod_id WHERE order_status = 'unfulfilled' AND customer_tbl.customer_name LIKE '%" & searchString & "%'"
+
+            Dim adapter As New SQLiteDataAdapter(sql, sqlite_conn)
+            Dim table As New DataTable
+            dgTable.DataSource = table
+            adapter.Fill(table)
+        Catch ex As Exception
 
         End Try
     End Sub
