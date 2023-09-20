@@ -19,11 +19,6 @@
         UserControlManager.showOrders()
 
 
-
-
-
-
-
     End Sub
 
     Private Sub btn_transaction_Click(sender As Object, e As EventArgs) Handles btn_transaction.Click

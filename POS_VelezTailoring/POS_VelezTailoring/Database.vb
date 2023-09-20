@@ -1,9 +1,12 @@
 ﻿Imports System.Data.SQLite
+Imports System.Windows.Controls
 
 Module Database
 
     Public sqlite_conn As New SQLiteConnection("Data Source = " & Application.StartupPath & "\user_tbl.db")
     Dim adapter As SQLiteDataAdapter
+    Dim dsset As New DataSet
+
 
     Public Sub open_conn()
         Try
@@ -105,6 +108,10 @@ Module Database
 
         End Try
     End Sub
+
+
+
+
 
 
 End Module
