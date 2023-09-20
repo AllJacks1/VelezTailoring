@@ -6,4 +6,8 @@
     Private Sub pb_minimize_Click(sender As Object, e As EventArgs) Handles pb_minimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub order_viewPanel_Paint(sender As Object, e As PaintEventArgs) Handles order_viewPanel.Paint
+
+    End Sub
 End Class

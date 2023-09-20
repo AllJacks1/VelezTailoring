@@ -1,6 +1,8 @@
 ﻿Public Class orderView2
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         'UserControlManager.showOrderView1(view_record.ActiveForm, )
+        UserControlManager.showOrders()
+
     End Sub
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click

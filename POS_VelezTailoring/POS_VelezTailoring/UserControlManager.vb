@@ -1,5 +1,4 @@
-﻿Imports System.Data.SQLite
-
+﻿
 Module UserControlManager
 
     Public Sub addUserControl(userControl As UserControl)

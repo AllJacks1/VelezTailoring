@@ -116,78 +116,85 @@ Module Database
             open_conn()
             Dim searchString As String = txtSearch
             Dim sql As String = "SELECT orders_tbl.order_id as 'Order ID', customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status',
-        product_tbl.prod_price
-
-as 'Overall price', orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as
+        product_tbl.prod_price as 'Overall price', orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as
         'Order deadline' FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = 
         product_tbl.prod_id WHERE order_status = 'unfulfilled' AND customer_tbl.customer_name LIKE '%" & searchString & "%'"
-
             Dim adapter As New SQLiteDataAdapter(sql, sqlite_conn)
             Dim table As New DataTable
             dgTable.DataSource = table
             adapter.Fill(table)
-        Catch ex As Exception
+        Catch ex As SQLiteException
 
+        Finally
+            close_conn()
         End Try
     End Sub
 
 
     Public Sub SetOrderId(ByVal orderIdValue As Integer, ByVal orderIdtextfield As Guna2TextBox, ByVal statustextfield As Guna2TextBox, ByVal customerNameTextField As Guna2TextBox, ByVal orderDatetextfield As Guna2TextBox,
      ByVal orderDeadtextfield As Guna2TextBox, ByVal orderAllPricetextfield As Guna2TextBox, ByVal orderPaymenttextfield As Guna2TextBox, ByVal orderBalanceTextField As Guna2TextBox)
+        Try
+            open_conn()
+
+            Dim nOrderId, NorderStatus, NorderDate, NorderDeath, NorderPrice, NorderPay, NcustomerName As String
+            Dim query As String = "SELECT orders_tbl.order_id, orders_tbl.order_status, orders_tbl.order_payment, " &
+                         "orders_tbl.order_date, orders_tbl.order_deadline, product_tbl.prod_price, " &
+                         "customer_tbl.customer_name " &
+                         "FROM orders_tbl " &
+                         "INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id " &
+                         "INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id " &
+                         "WHERE orders_tbl.order_id = " & orderIdValue
+            Using command As New SQLiteCommand(query, sqlite_conn)
+                Using reader As SQLiteDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+
+                        nOrderId = reader("order_id")
+                        NorderStatus = reader("order_status").ToString()
+                        NcustomerName = reader("customer_name").ToString()
 
 
-        open_conn()
+                        NorderDate = reader("order_date").ToString()
 
-        Dim nOrderId, NorderStatus, NorderDate, NorderDeath, NorderPrice, NorderPay, NcustomerName As String
-        Dim query As String = "SELECT orders_tbl.order_id, orders_tbl.order_status, orders_tbl.order_payment, " &
-                     "orders_tbl.order_date, orders_tbl.order_deadline, product_tbl.prod_price, " &
-                     "customer_tbl.customer_name " &
-                     "FROM orders_tbl " &
-                     "INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id " &
-                     "INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id " &
-                     "WHERE orders_tbl.order_id = " & orderIdValue
-        Using command As New SQLiteCommand(query, sqlite_conn)
-            Using reader As SQLiteDataReader = command.ExecuteReader()
-                If reader.Read() Then
+                        NorderDeath = reader("order_deadline").ToString()
+                        NorderPrice = reader("prod_price").ToString()
+                        NorderPay = reader("order_payment").ToString()
 
-                    nOrderId = reader("order_id")
-                    NorderStatus = reader("order_status").ToString()
-                    NcustomerName = reader("customer_name").ToString()
+                        orderIdtextfield.Text = nOrderId
+                        statustextfield.Text = NorderStatus
+                        customerNameTextField.Text = NcustomerName
+                        orderDatetextfield.Text = NorderDate
+                        orderDeadtextfield.Text = NorderDeath
+                        orderAllPricetextfield.Text = NorderPrice
+                        orderPaymenttextfield.Text = NorderPay
+
+                        Dim NorderPrices As String = reader("prod_price").ToString()
+                        Dim NorderPays As String = reader("order_payment").ToString()
+                        Dim price As Double
+                        Dim payment As Double
+                        If Double.TryParse(NorderPrice, price) AndAlso Double.TryParse(NorderPay, payment) Then
+                            Dim result As Double = price - payment
+                            orderBalanceTextField.Text = result
+                        End If
 
 
-                    NorderDate = reader("order_date").ToString()
+                    Else
 
-                    NorderDeath = reader("order_deadline").ToString()
-                    NorderPrice = reader("prod_price").ToString()
-                    NorderPay = reader("order_payment").ToString()
-
-                    orderIdtextfield.Text = nOrderId
-                    statustextfield.Text = NorderStatus
-                    customerNameTextField.Text = NcustomerName
-                    orderDatetextfield.Text = NorderDate
-                    orderDeadtextfield.Text = NorderDeath
-                    orderAllPricetextfield.Text = NorderPrice
-                    orderPaymenttextfield.Text = NorderPay
-
-                    Dim NorderPrices As String = reader("prod_price").ToString()
-                    Dim NorderPays As String = reader("order_payment").ToString()
-                    Dim price As Double
-                    Dim payment As Double
-                    If Double.TryParse(NorderPrice, price) AndAlso Double.TryParse(NorderPay, payment) Then
-                        Dim result As Double = price - payment
-                        orderBalanceTextField.Text = result
+                        MessageBox.Show("No data found.")
                     End If
-
-
-                Else
-
-                    MessageBox.Show("No data found.")
-                End If
+                End Using
             End Using
-        End Using
+
+        Catch ex As SQLiteException
+        Finally
+            close_conn()
 
 
+        End Try
 
+
+    End Sub
+    Public Sub updatePayment()
+        'UPDATE PAYMENT OF SELECTED CUSTOMER'
     End Sub
 
 

@@ -95,3 +95,6 @@ C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailor
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.UI_DESIGN.resources
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.view_record.resources
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.vbproj.CopyComplete
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView1.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView2.resources
+E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.view_record.resources

@@ -24,10 +24,10 @@ Partial Class view_record
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(view_record))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.order_viewPanel = New System.Windows.Forms.Panel()
         Me.pb_minimize = New System.Windows.Forms.PictureBox()
         Me.pb_exit = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.order_viewPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.pb_minimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_exit, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,6 +45,13 @@ Partial Class view_record
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1406, 533)
         Me.Panel1.TabIndex = 0
+        '
+        'order_viewPanel
+        '
+        Me.order_viewPanel.Location = New System.Drawing.Point(383, 35)
+        Me.order_viewPanel.Name = "order_viewPanel"
+        Me.order_viewPanel.Size = New System.Drawing.Size(928, 473)
+        Me.order_viewPanel.TabIndex = 22
         '
         'pb_minimize
         '
@@ -76,13 +83,6 @@ Partial Class view_record
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
-        '
-        'order_viewPanel
-        '
-        Me.order_viewPanel.Location = New System.Drawing.Point(383, 35)
-        Me.order_viewPanel.Name = "order_viewPanel"
-        Me.order_viewPanel.Size = New System.Drawing.Size(928, 473)
-        Me.order_viewPanel.TabIndex = 22
         '
         'view_record
         '
