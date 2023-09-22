@@ -72,7 +72,6 @@ Partial Class UpdateRecord
         Me.txt_description.Name = "txt_description"
         Me.txt_description.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_description.PlaceholderText = ""
-        Me.txt_description.ReadOnly = True
         Me.txt_description.SelectedText = ""
         Me.txt_description.Size = New System.Drawing.Size(696, 444)
         Me.txt_description.TabIndex = 93
@@ -118,7 +117,6 @@ Partial Class UpdateRecord
         Me.txt_balance.Name = "txt_balance"
         Me.txt_balance.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_balance.PlaceholderText = ""
-        Me.txt_balance.ReadOnly = True
         Me.txt_balance.SelectedText = ""
         Me.txt_balance.Size = New System.Drawing.Size(314, 55)
         Me.txt_balance.TabIndex = 90
@@ -230,12 +228,11 @@ Partial Class UpdateRecord
         Me.txt_price.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_price.ForeColor = System.Drawing.Color.Black
         Me.txt_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_price.Location = New System.Drawing.Point(1150, 297)
+        Me.txt_price.Location = New System.Drawing.Point(1175, 297)
         Me.txt_price.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_price.Name = "txt_price"
         Me.txt_price.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_price.PlaceholderText = ""
-        Me.txt_price.ReadOnly = True
         Me.txt_price.SelectedText = ""
         Me.txt_price.Size = New System.Drawing.Size(319, 55)
         Me.txt_price.TabIndex = 81
@@ -259,7 +256,6 @@ Partial Class UpdateRecord
         Me.txt_pay.Name = "txt_pay"
         Me.txt_pay.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_pay.PlaceholderText = ""
-        Me.txt_pay.ReadOnly = True
         Me.txt_pay.SelectedText = ""
         Me.txt_pay.Size = New System.Drawing.Size(314, 55)
         Me.txt_pay.TabIndex = 80
@@ -307,7 +303,6 @@ Partial Class UpdateRecord
         Me.txt_name.Name = "txt_name"
         Me.txt_name.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_name.PlaceholderText = ""
-        Me.txt_name.ReadOnly = True
         Me.txt_name.SelectedText = ""
         Me.txt_name.Size = New System.Drawing.Size(815, 55)
         Me.txt_name.TabIndex = 78
@@ -331,7 +326,6 @@ Partial Class UpdateRecord
         Me.txt_dead.Name = "txt_dead"
         Me.txt_dead.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_dead.PlaceholderText = ""
-        Me.txt_dead.ReadOnly = True
         Me.txt_dead.SelectedText = ""
         Me.txt_dead.Size = New System.Drawing.Size(696, 55)
         Me.txt_dead.TabIndex = 77
@@ -355,7 +349,6 @@ Partial Class UpdateRecord
         Me.txt_status.Name = "txt_status"
         Me.txt_status.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_status.PlaceholderText = ""
-        Me.txt_status.ReadOnly = True
         Me.txt_status.SelectedText = ""
         Me.txt_status.Size = New System.Drawing.Size(319, 55)
         Me.txt_status.TabIndex = 76

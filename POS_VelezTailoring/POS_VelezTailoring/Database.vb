@@ -69,9 +69,8 @@ Module Database
         End Try
     End Sub
 
-    'TRANSACTION
-
-    Public Sub transaction(ByVal name As String, ByVal contact_number As String, ByVal product_type As String, ByVal overall_price As Integer, ByVal down_payment As Integer, ByVal estimated_time As String)
+    'ADD ORDERS
+    Public Sub addOrders(ByVal name As String, ByVal contact_number As String, ByVal product_type As String, ByVal overall_price As Integer, ByVal down_payment As Integer, ByVal estimated_time As String)
         Try
             open_conn()
 
@@ -95,11 +94,39 @@ Module Database
         End Try
     End Sub
 
+    ''FOR UPDATING ORDERS
+    Public Sub updateOrder(ByVal orderIdValue As Integer, ByVal customerName As String, ByVal orderStatus As String, ByVal description As String,
+                           ByVal overallPrice As Integer, ByVal orderPayment As Integer, ByVal deadline As String)
+        Try
+            open_conn()
+            Dim sql_command As New SQLiteCommand($"UPDATE customer_tbl SET customer_name = '{customerName}' 
+            WHERE customer_id = (SELECT customer_id FROM orders_tbl WHERE order_id = '{orderIdValue}'); ", sqlite_conn)
+            sql_command.ExecuteNonQuery()
+            Dim sql_command2 As New SQLiteCommand($"Update product_tbl SET prod_type = '{description}', prod_price='{overallPrice}' 
+            WHERE prod_id = (SELECT prod_id FROM orders_tbl WHERE order_id = '{orderIdValue}'); ", sqlite_conn)
+            sql_command2.ExecuteNonQuery()
+            Dim sql_command3 As New SQLiteCommand($"UPDATE orders_Tbl SET order_status = '{orderStatus}', order_payment = '{orderPayment}', order_deadline = '{deadline}' 
+            WHERE order_id = '{orderIdValue}' ", sqlite_conn)
+            sql_command3.ExecuteNonQuery()
+            MsgBox("ORDER UPDATED!", vbInformation)
+            UserControlManager.showOrders()
+
+        Catch ex As SQLiteException
+            MessageBox.Show(ex.Message)
+
+        Finally
+            close_conn()
+
+        End Try
+    End Sub
+
+    'FOR DISPLAYING ORDERS
     Public Sub displayOrders(ByVal usercontrol As OrdersPanel)
         Try
             open_conn()
-            Dim adapter As New SQLiteDataAdapter("SELECT orders_tbl.order_id as 'Order ID',customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status', product_tbl.prod_price as 'Overall price',orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as 'Order deadline' 
-            FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id WHERE order_status = 'unfulfilled'", sqlite_conn)
+            Dim adapter As New SQLiteDataAdapter("SELECT orders_tbl.order_id as 'Order ID', customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status', 
+            product_tbl.prod_price as 'Overall price', orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as 'Order deadline' 
+            FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id WHERE order_status = order_status ", sqlite_conn)
             Dim table As New DataTable
             adapter.Fill(table)
             usercontrol.display_orderDGV.DataSource = table
@@ -111,7 +138,9 @@ Module Database
         End Try
     End Sub
 
-    Public Sub searchRecord(ByVal txtSearch As String, ByVal dgTable As Guna2DataGridView)
+
+    ''FOR SEARCHING ORDERS
+    Public Sub searchOrder(ByVal txtSearch As String, ByVal dgTable As Guna2DataGridView)
         Try
             open_conn()
             Dim searchString As String = txtSearch
@@ -130,15 +159,15 @@ Module Database
         End Try
     End Sub
 
-
+    ''TO RETRIEVE ORDER INFOs
     Public Sub SetOrderId(ByVal orderIdValue As Integer, ByVal orderIdtextfield As Guna2TextBox, ByVal statustextfield As Guna2TextBox, ByVal customerNameTextField As Guna2TextBox, ByVal orderDatetextfield As Guna2TextBox,
-     ByVal orderDeadtextfield As Guna2TextBox, ByVal orderAllPricetextfield As Guna2TextBox, ByVal orderPaymenttextfield As Guna2TextBox, ByVal orderBalanceTextField As Guna2TextBox)
+     ByVal orderDeadtextfield As Guna2TextBox, ByVal orderAllPricetextfield As Guna2TextBox, ByVal descriptionfield As Guna2TextBox, ByVal orderPaymenttextfield As Guna2TextBox, ByVal orderBalanceTextField As Guna2TextBox)
         Try
             open_conn()
 
-            Dim nOrderId, NorderStatus, NorderDate, NorderDeath, NorderPrice, NorderPay, NcustomerName As String
+            Dim nOrderId, NorderStatus, NorderDate, NorderDeath, Nprod_type, NorderPrice, NorderPay, NcustomerName As String
             Dim query As String = "SELECT orders_tbl.order_id, orders_tbl.order_status, orders_tbl.order_payment, " &
-                         "orders_tbl.order_date, orders_tbl.order_deadline, product_tbl.prod_price, " &
+                         "orders_tbl.order_date, orders_tbl.order_deadline, product_tbl.prod_price, product_tbl.prod_type, " &
                          "customer_tbl.customer_name " &
                          "FROM orders_tbl " &
                          "INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id " &
@@ -152,11 +181,11 @@ Module Database
                         NorderStatus = reader("order_status").ToString()
                         NcustomerName = reader("customer_name").ToString()
 
-
                         NorderDate = reader("order_date").ToString()
 
                         NorderDeath = reader("order_deadline").ToString()
                         NorderPrice = reader("prod_price").ToString()
+                        Nprod_type = reader("prod_type").ToString
                         NorderPay = reader("order_payment").ToString()
 
                         orderIdtextfield.Text = nOrderId
@@ -165,6 +194,7 @@ Module Database
                         orderDatetextfield.Text = NorderDate
                         orderDeadtextfield.Text = NorderDeath
                         orderAllPricetextfield.Text = NorderPrice
+                        descriptionfield.Text = Nprod_type
                         orderPaymenttextfield.Text = NorderPay
 
                         Dim NorderPrices As String = reader("prod_price").ToString()
@@ -176,7 +206,6 @@ Module Database
                             orderBalanceTextField.Text = result
                         End If
 
-
                     Else
 
                         MessageBox.Show("No data found.")
@@ -187,17 +216,7 @@ Module Database
         Catch ex As SQLiteException
         Finally
             close_conn()
-
-
         End Try
-
-
     End Sub
-    Public Sub updatePayment()
-        'UPDATE PAYMENT OF SELECTED CUSTOMER'
-    End Sub
-
-
-
 
 End Module
