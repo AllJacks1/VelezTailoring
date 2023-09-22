@@ -37,10 +37,7 @@ C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_V
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.xml
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\System.Data.SQLite.xml
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.sales_panel.resources
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.transaction_panel.resources
 C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orders_panel.resources
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x86\sqlite3.dll
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x64\sqlite3.dll
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\POS_VelezTailoring.exe.config
@@ -71,9 +68,6 @@ E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_Vel
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.exe
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.xml
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.pdb
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.view_record.resources
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView1.resources
-C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView2.resources
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x86\sqlite3.dll
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\x64\sqlite3.dll
 C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\bin\Debug\EntityFramework.dll
@@ -98,3 +92,9 @@ C:\Users\miko\Documents\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailor
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView1.resources
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.orderView2.resources
 E:\GitHub\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.view_record.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.OrdersPanel.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.SalesPanel.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.TransactionPanel.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.ViewRecord.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.AddPayment.resources
+C:\Users\karlt\OneDrive\Documents\School Files\IT13 Project\VelezTailoring\POS_VelezTailoring\POS_VelezTailoring\obj\Debug\POS_VelezTailoring.UpdateRecord.resources

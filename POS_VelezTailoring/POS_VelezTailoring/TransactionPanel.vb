@@ -1,4 +1,4 @@
-﻿Public Class transaction_panel
+﻿Public Class TransactionPanel
 
     Private Sub save_ordertxt_Click(sender As Object, e As EventArgs) Handles save_ordertxt.Click
         Dim customer_name, customer_number, estimated_time, overall_price, down_payment, prod_type As String

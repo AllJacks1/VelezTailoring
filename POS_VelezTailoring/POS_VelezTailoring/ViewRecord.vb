@@ -1,4 +1,4 @@
-﻿Public Class view_record
+﻿Public Class ViewRecord
     Private Sub pb_exit_Click(sender As Object, e As EventArgs) Handles pb_exit.Click
         Me.Close()
     End Sub
@@ -7,7 +7,10 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub order_viewPanel_Paint(sender As Object, e As PaintEventArgs) Handles order_viewPanel.Paint
-
+    Private Sub btn_addPayment_Click(sender As Object, e As EventArgs) Handles btn_addPayment.Click
+        Dim addPayment = New AddPayment
+        addPayment.Show()
     End Sub
+
+
 End Class

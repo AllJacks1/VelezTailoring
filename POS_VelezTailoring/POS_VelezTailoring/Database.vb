@@ -95,7 +95,7 @@ Module Database
         End Try
     End Sub
 
-    Public Sub displayOrders(ByVal usercontrol As orders_panel)
+    Public Sub displayOrders(ByVal usercontrol As OrdersPanel)
         Try
             open_conn()
             Dim adapter As New SQLiteDataAdapter("SELECT orders_tbl.order_id as 'Order ID',customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status', product_tbl.prod_price as 'Overall price',orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as 'Order deadline' 

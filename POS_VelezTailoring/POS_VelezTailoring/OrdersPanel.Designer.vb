@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class orders_panel
+Partial Class OrdersPanel
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -29,8 +29,8 @@ Partial Class orders_panel
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_search = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btn_view = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_update = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_remove = New Guna.UI2.WinForms.Guna2Button()
         Me.display_orderDGV = New Guna.UI2.WinForms.Guna2DataGridView()
         CType(Me.display_orderDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -85,37 +85,37 @@ Partial Class orders_panel
         Me.btn_view.TabIndex = 17
         Me.btn_view.Text = "VIEW"
         '
-        'Guna2Button2
+        'btn_update
         '
-        Me.Guna2Button2.BorderRadius = 15
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(563, 630)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(519, 109)
-        Me.Guna2Button2.TabIndex = 18
-        Me.Guna2Button2.Text = "UPDATE"
+        Me.btn_update.BorderRadius = 15
+        Me.btn_update.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_update.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_update.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
+        Me.btn_update.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.btn_update.ForeColor = System.Drawing.Color.White
+        Me.btn_update.Location = New System.Drawing.Point(563, 630)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.Size = New System.Drawing.Size(519, 109)
+        Me.btn_update.TabIndex = 18
+        Me.btn_update.Text = "UPDATE"
         '
-        'Guna2Button4
+        'btn_remove
         '
-        Me.Guna2Button4.BorderRadius = 15
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Location = New System.Drawing.Point(1102, 630)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(519, 109)
-        Me.Guna2Button4.TabIndex = 19
-        Me.Guna2Button4.Text = "REMOVE"
+        Me.btn_remove.BorderRadius = 15
+        Me.btn_remove.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_remove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_remove.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_remove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_remove.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
+        Me.btn_remove.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(1102, 630)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(519, 109)
+        Me.btn_remove.TabIndex = 19
+        Me.btn_remove.Text = "REMOVE"
         '
         'display_orderDGV
         '
@@ -188,18 +188,18 @@ Partial Class orders_panel
         Me.display_orderDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.display_orderDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'orders_panel
+        'OrdersPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Controls.Add(Me.display_orderDGV)
-        Me.Controls.Add(Me.Guna2Button4)
-        Me.Controls.Add(Me.Guna2Button2)
+        Me.Controls.Add(Me.btn_remove)
+        Me.Controls.Add(Me.btn_update)
         Me.Controls.Add(Me.btn_view)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_search)
-        Me.Name = "orders_panel"
+        Me.Name = "OrdersPanel"
         Me.Size = New System.Drawing.Size(1657, 757)
         CType(Me.display_orderDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -210,7 +210,7 @@ Partial Class orders_panel
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_search As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btn_view As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_update As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_remove As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents display_orderDGV As Guna.UI2.WinForms.Guna2DataGridView
 End Class
