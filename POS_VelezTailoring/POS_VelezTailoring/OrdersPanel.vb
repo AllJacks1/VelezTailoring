@@ -4,7 +4,6 @@ Public Class OrdersPanel
     Private Sub btn_view_Click(sender As Object, e As EventArgs) Handles btn_view.Click
 
         If display_orderDGV.SelectedCells.Count > 0 Then
-
             Dim selectedOrderId As Integer
             If Integer.TryParse(display_orderDGV.SelectedCells(0).Value.ToString(), selectedOrderId) Then
                 Dim viewRecord = New ViewRecord
@@ -18,13 +17,14 @@ Public Class OrdersPanel
 
 
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
+
         Database.searchOrder(txt_search.Text, display_orderDGV)
+
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
 
         If display_orderDGV.SelectedCells.Count > 0 Then
-
             Dim selectedOrderId As Integer
             If Integer.TryParse(display_orderDGV.SelectedCells(0).Value.ToString(), selectedOrderId) Then
                 Dim updateRecord = New UpdateRecord
@@ -34,7 +34,17 @@ Public Class OrdersPanel
                 MessageBox.Show("Invalid order_id value.")
             End If
         End If
+
     End Sub
 
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
 
+        If display_orderDGV.SelectedCells.Count > 0 Then
+            Dim selectedOrderId As Integer = display_orderDGV.SelectedCells(0).Value
+            removeOrder(selectedOrderId)
+        Else
+            MessageBox.Show("Invalid order_id value.")
+        End If
+
+    End Sub
 End Class

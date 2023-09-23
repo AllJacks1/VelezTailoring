@@ -40,7 +40,7 @@ Partial Class OrdersPanel
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(49, 39)
+        Me.Label1.Location = New System.Drawing.Point(195, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 29)
         Me.Label1.TabIndex = 3
@@ -60,7 +60,7 @@ Partial Class OrdersPanel
         Me.txt_search.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_search.ForeColor = System.Drawing.Color.Black
         Me.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_search.Location = New System.Drawing.Point(181, 28)
+        Me.txt_search.Location = New System.Drawing.Point(327, 24)
         Me.txt_search.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_search.Name = "txt_search"
         Me.txt_search.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)

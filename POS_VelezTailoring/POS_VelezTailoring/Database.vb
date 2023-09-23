@@ -8,7 +8,7 @@ Module Database
     Dim adapter As SQLiteDataAdapter
     Dim dsset As New DataSet
 
-
+    'OPENING CONNECTION
     Public Sub open_conn()
         Try
             If sqlite_conn.State = ConnectionState.Closed Then
@@ -19,7 +19,10 @@ Module Database
             MsgBox("Error: " & ex.Message, vbCritical)
 
         End Try
+
     End Sub
+
+    'CLOSING CONNECTION
     Public Sub close_conn()
         Try
             If sqlite_conn.State = ConnectionState.Open Then
@@ -30,15 +33,17 @@ Module Database
             MsgBox("Error: " & ex.Message, vbCritical)
 
         End Try
+
     End Sub
 
+    'LOGIN
     Public Sub user_login(ByVal username As String, ByVal password As String)
         Try
             open_conn()
             Dim sql_command As New SQLiteCommand($"SELECT * FROM user_tbl WHERE `user_name` = '{username}' And `user_password` = '{password}';", sqlite_conn)
             Dim reader As SQLiteDataReader = sql_command.ExecuteReader
             If reader.Read Then
-                MsgBox("REGISTERED SUCCESSFULLY", vbInformation)
+                MsgBox("REGISTERED SUCCESSFULLY", vbInformation, "Velez Tailoring")
                 MessageBox.Show("Welcome user: " & reader.GetString(1), "Velez Tailoring")
                 Dashboard.Show()
                 Form1.Close()
@@ -47,26 +52,28 @@ Module Database
 
             End If
         Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
         Finally
             close_conn()
         End Try
 
-
     End Sub
 
+    'REGISTER ACCOUNT
     Public Sub user_register(ByVal username As String, ByVal password As String)
         Try
             open_conn()
             Dim sql_command As New SQLiteCommand($"INSERT INTO user_tbl (`user_name`,`user_password`) VALUES ('{username}', '{password}');", sqlite_conn)
             sql_command.ExecuteNonQuery()
-            MsgBox("REGISTERED SUCCESSFULLY", vbInformation)
+            MsgBox("REGISTERED SUCCESSFULLY", vbInformation, "Velez Tailoring")
 
         Catch ex As SQLiteException
-            MsgBox("Error: " & ex.Message, vbCritical)
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
         Finally
             close_conn()
 
         End Try
+
     End Sub
 
     'ADD ORDERS
@@ -75,7 +82,7 @@ Module Database
             open_conn()
 
             'Insert into customer_tbl and retrieve the auto-incremented customer_id
-            Dim sql_command As New SQLiteCommand($"INSERT INTO customer_tbl ('customer_name','customer_number') VALUES ('{name}','{contact_number}'); SELECT last_insert_rowid();", sqlite_conn)
+            Dim sql_command As New SQLiteCommand($"INSERT INTO customer_tbl ('customer_name','customer_number', 'customer_status') VALUES ('{name}','{contact_number}','active'); SELECT last_insert_rowid();", sqlite_conn)
             Dim customer_id As Integer = CInt(sql_command.ExecuteScalar())
 
             'Insert into product_tbl and retrieve the auto-incremented prod_id
@@ -86,9 +93,9 @@ Module Database
             Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{Date.Now}', '{estimated_time}')", sqlite_conn)
             sql_command3.ExecuteNonQuery()
 
-            MsgBox("TRANSACTION COMPLETE.", vbInformation)
+            MsgBox("TRANSACTION COMPLETE.", vbInformation, "Velez Tailoring")
         Catch ex As SQLiteException
-            MsgBox("Error: " & ex.Message, vbCritical)
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
         Finally
             close_conn()
         End Try
@@ -108,16 +115,37 @@ Module Database
             Dim sql_command3 As New SQLiteCommand($"UPDATE orders_Tbl SET order_status = '{orderStatus}', order_payment = '{orderPayment}', order_deadline = '{deadline}' 
             WHERE order_id = '{orderIdValue}' ", sqlite_conn)
             sql_command3.ExecuteNonQuery()
-            MsgBox("ORDER UPDATED!", vbInformation)
+            MsgBox("ORDER UPDATED.", vbInformation, "Velez Tailoring")
             UserControlManager.showOrders()
 
         Catch ex As SQLiteException
-            MessageBox.Show(ex.Message)
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
 
         Finally
             close_conn()
 
         End Try
+
+    End Sub
+
+    ''FOR DELETING ORDERS
+    Public Sub removeOrder(ByVal orderIdValue As Integer)
+        Try
+            open_conn()
+            Dim sql_command As New SQLiteCommand($"UPDATE customer_tbl SET customer_status = 'inactive' 
+            WHERE customer_id = (SELECT customer_id FROM orders_tbl WHERE order_id = '{orderIdValue}'); ", sqlite_conn)
+            sql_command.ExecuteNonQuery()
+            MsgBox("ORDER REMOVED.", vbInformation, "Velez Tailoring")
+            UserControlManager.showOrders()
+
+        Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
+
+        Finally
+            close_conn()
+
+        End Try
+
     End Sub
 
     'FOR DISPLAYING ORDERS
@@ -126,18 +154,19 @@ Module Database
             open_conn()
             Dim adapter As New SQLiteDataAdapter("SELECT orders_tbl.order_id as 'Order ID', customer_tbl.customer_name as 'Customer name', orders_tbl.order_status as 'Order status', 
             product_tbl.prod_price as 'Overall price', orders_tbl.order_payment as 'Order payment', orders_tbl.order_date as 'Order date', orders_tbl.order_deadline as 'Order deadline' 
-            FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id WHERE order_status = order_status ", sqlite_conn)
+            FROM orders_tbl INNER JOIN customer_tbl ON orders_tbl.customer_id = customer_tbl.customer_id INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id WHERE customer_status = 'active' ", sqlite_conn)
             Dim table As New DataTable
             adapter.Fill(table)
             usercontrol.display_orderDGV.DataSource = table
         Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
 
         Finally
             close_conn()
 
         End Try
-    End Sub
 
+    End Sub
 
     ''FOR SEARCHING ORDERS
     Public Sub searchOrder(ByVal txtSearch As String, ByVal dgTable As Guna2DataGridView)
@@ -153,10 +182,12 @@ Module Database
             dgTable.DataSource = table
             adapter.Fill(table)
         Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
 
         Finally
             close_conn()
         End Try
+
     End Sub
 
     ''TO RETRIEVE ORDER INFOs
@@ -214,8 +245,11 @@ Module Database
             End Using
 
         Catch ex As SQLiteException
+            MsgBox("Error: " & ex.Message, vbCritical)
+
         Finally
             close_conn()
+
         End Try
     End Sub
 

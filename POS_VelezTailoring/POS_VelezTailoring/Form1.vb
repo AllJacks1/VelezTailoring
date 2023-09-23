@@ -1,10 +1,5 @@
 ﻿Public Class Form1
 
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.Close()
     End Sub
@@ -26,10 +21,8 @@
             user_login(username, password)
             username_txt.Clear()
             password_txt.Clear()
-
         End If
 
     End Sub
-
 
 End Class
