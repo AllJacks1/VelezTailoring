@@ -253,4 +253,97 @@ Module Database
         End Try
     End Sub
 
+    Public Sub addpaymentview(ByVal orderIdValue As Integer, ByVal totalPaytextfield As Guna2TextBox, ByVal overallPaytextfield As Guna2TextBox, ByVal orderIdtextfield As Guna2TextBox)
+        Try
+            open_conn()
+            Dim ntotalpay, noverallpay, nOrderId As String
+            Dim query As String = "SELECT orders_tbl.order_id,orders_tbl.order_id, orders_tbl.order_payment, product_tbl.prod_price " &
+             "FROM orders_tbl " &
+             "INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id " &
+             "WHERE orders_tbl.order_id = " & orderIdValue
+
+            Using command As New SQLiteCommand(query, sqlite_conn)
+                Using reader As SQLiteDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        nOrderId = reader("order_id")
+                        ntotalpay = reader("order_payment").ToString()
+                        noverallpay = reader("prod_price").ToString()
+                        totalPaytextfield.Text = ntotalpay
+                        overallPaytextfield.Text = noverallpay
+                        orderIdtextfield.Text = nOrderId
+
+
+                    Else
+                        MessageBox.Show("Order not found in the database.")
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
+        Finally
+
+            close_conn()
+        End Try
+    End Sub
+
+    Public Sub addpaymenttotal(ByVal orderIdValue As Integer, ByVal addpaymenttextfield As Double)
+        Dim ntotalpay, newtotal As Double
+        open_conn()
+        Dim query As String = "SELECT order_payment FROM orders_tbl WHERE order_id = " & orderIdValue
+        Using command As New SQLiteCommand(query, sqlite_conn)
+            Using reader As SQLiteDataReader = command.ExecuteReader()
+                If reader.Read() Then
+                    ntotalpay = reader("order_payment")
+                    newtotal = ntotalpay + addpaymenttextfield
+                    Dim query2 As String = "UPDATE orders_tbl SET order_payment = " & newtotal & " WHERE order_id = " & orderIdValue
+                    Using updateCommand As New SQLiteCommand(query2, sqlite_conn)
+                        Dim rowsAffected As Integer = updateCommand.ExecuteNonQuery()
+                        If rowsAffected > 0 Then
+                            MessageBox.Show("Payment updated successfully.")
+                        Else
+                            MessageBox.Show("Failed to update payment.")
+                        End If
+                    End Using
+                Else
+                    MessageBox.Show("Order not found in the database.")
+                End If
+            End Using
+        End Using
+
+        Try
+            Dim ntotalspay, noverallspay As String
+            Dim queryall As String = "SELECT orders_tbl.order_id,orders_tbl.order_id, orders_tbl.order_payment, product_tbl.prod_price " &
+             "FROM orders_tbl " &
+             "INNER JOIN product_tbl ON orders_tbl.prod_id = product_tbl.prod_id " &
+             "WHERE orders_tbl.order_id = " & orderIdValue
+
+            Using command As New SQLiteCommand(queryall, sqlite_conn)
+                Using reader As SQLiteDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        ntotalspay = reader("order_payment").ToString()
+                        noverallspay = reader("prod_price").ToString()
+
+
+                        If ntotalspay = noverallspay Then
+                            Dim query3 As String = "UPDATE orders_tbl SET order_status = 'fulfilled' WHERE order_id = " & orderIdValue
+
+                            Using updateCommand As New SQLiteCommand(query3, sqlite_conn)
+                                Dim rowsAffected As Integer = updateCommand.ExecuteNonQuery()
+
+                            End Using
+                        End If
+                    Else
+                        MessageBox.Show("Order not found in the database.")
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
+        Finally
+
+
+        End Try
+        close_conn()
+    End Sub
+
 End Module

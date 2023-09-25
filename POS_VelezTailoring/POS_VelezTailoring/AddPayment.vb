@@ -12,4 +12,11 @@
     Private Sub pb_minimize_Click(sender As Object, e As EventArgs) Handles pb_minimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
+        Dim orderIdValue As Integer = Integer.Parse(txt_orderid.Text)
+        Dim newpayment As Double = txt_addPayment.Text
+        addpaymenttotal(orderIdValue, newpayment)
+
+    End Sub
 End Class
