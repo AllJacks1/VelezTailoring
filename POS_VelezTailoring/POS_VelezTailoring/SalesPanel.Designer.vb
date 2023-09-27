@@ -24,7 +24,7 @@ Partial Class SalesPanel
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SalesPanel))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_daily = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -63,17 +63,17 @@ Partial Class SalesPanel
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TODAYS EARNINGS:"
         '
-        'Label2
+        'lbl_daily
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(221, 381)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(325, 76)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "300.00 PHP"
+        Me.lbl_daily.AutoSize = True
+        Me.lbl_daily.BackColor = System.Drawing.Color.White
+        Me.lbl_daily.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_daily.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.lbl_daily.Location = New System.Drawing.Point(221, 381)
+        Me.lbl_daily.Name = "lbl_daily"
+        Me.lbl_daily.Size = New System.Drawing.Size(325, 76)
+        Me.lbl_daily.TabIndex = 1
+        Me.lbl_daily.Text = "300.00 PHP"
         '
         'Label5
         '
@@ -261,7 +261,7 @@ Partial Class SalesPanel
         Me.btn_monthEarningsDetail.TabIndex = 17
         Me.btn_monthEarningsDetail.Text = "See Additional Details"
         '
-        'sales_panel
+        'SalesPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -272,7 +272,7 @@ Partial Class SalesPanel
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Guna2PictureBox6)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_daily)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2CirclePictureBox1)
@@ -282,7 +282,7 @@ Partial Class SalesPanel
         Me.Controls.Add(Me.Guna2PictureBox2)
         Me.Controls.Add(Me.Guna2CirclePictureBox3)
         Me.Controls.Add(Me.Guna2CirclePictureBox4)
-        Me.Name = "sales_panel"
+        Me.Name = "SalesPanel"
         Me.Size = New System.Drawing.Size(1657, 757)
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -300,7 +300,7 @@ Partial Class SalesPanel
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_daily As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox

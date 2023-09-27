@@ -78,6 +78,9 @@ Module Database
 
     'ADD ORDERS
     Public Sub addOrders(ByVal name As String, ByVal contact_number As String, ByVal product_type As String, ByVal overall_price As Integer, ByVal down_payment As Integer, ByVal estimated_time As String)
+        Dim currentDate As DateTime = DateTime.Now
+        Dim formattedDate As String = currentDate.ToString("yyyy/MM/dd")
+
         Try
             open_conn()
 
@@ -90,7 +93,7 @@ Module Database
             Dim prod_id As Integer = CInt(sql_command2.ExecuteScalar())
 
             'Insert into orders_tbl using the retrieved customer_id and product_id
-            Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{Date.Now}', '{estimated_time}')", sqlite_conn)
+            Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{formattedDate}', '{estimated_time}')", sqlite_conn)
             sql_command3.ExecuteNonQuery()
 
             MsgBox("TRANSACTION COMPLETE.", vbInformation, "Velez Tailoring")
@@ -346,4 +349,46 @@ Module Database
         close_conn()
     End Sub
 
+    Public Sub test(ByVal labeldaily)
+        open_conn()
+
+
+        Dim currentDate As DateTime = DateTime.Now
+
+        Dim formattedDate As String = currentDate.ToString("yyyy/MM/dd")
+        Try
+            Dim query As String = "SELECT SUM(order_payment) FROM orders_tbl WHERE order_date = '" & formattedDate & "'"
+            Using command As New SQLiteCommand(query, sqlite_conn)
+                Using reader As SQLiteDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+
+                        If Not reader.IsDBNull(0) Then
+                            Dim sumValue As Double = reader.GetDouble(0)
+                            labeldaily.Text = "₱" & sumValue.ToString()
+                        Else
+                            labeldaily.text = "₱ 0.00"
+                        End If
+                    Else
+                        MsgBox("No data found for " & formattedDate)
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+
+            MsgBox("Error: " & ex.Message)
+
+
+        Finally
+            close_conn()
+
+        End Try
+
+
+
+
+
+    End Sub
+
+
 End Module
+

@@ -13,9 +13,11 @@
         Dim orderIdValue As Integer = Integer.Parse(txt_orderid.Text)
 
 
+
         addPayment.Show()
 
         addpaymentview(orderIdValue, addPayment.txt_totalPayment, addPayment.txt_overallPayment, addPayment.txt_orderid)
+
 
 
 
