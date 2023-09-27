@@ -166,10 +166,10 @@ Partial Class TransactionPanel
         '
         Me.etc_dtp.BorderRadius = 15
         Me.etc_dtp.Checked = True
-        Me.etc_dtp.CustomFormat = ""
+        Me.etc_dtp.CustomFormat = "yyyy/MM/dd"
         Me.etc_dtp.FillColor = System.Drawing.Color.White
         Me.etc_dtp.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.etc_dtp.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.etc_dtp.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.etc_dtp.Location = New System.Drawing.Point(249, 376)
         Me.etc_dtp.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.etc_dtp.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
@@ -262,7 +262,7 @@ Partial Class TransactionPanel
         Me.down_paymenttxt.Size = New System.Drawing.Size(372, 72)
         Me.down_paymenttxt.TabIndex = 19
         '
-        'transaction_panel
+        'TransactionPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -281,7 +281,7 @@ Partial Class TransactionPanel
         Me.Controls.Add(Me.customer_numtxt)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.customer_nametxt)
-        Me.Name = "transaction_panel"
+        Me.Name = "TransactionPanel"
         Me.Size = New System.Drawing.Size(1657, 757)
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -25,7 +25,7 @@ Partial Class SalesPanel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SalesPanel))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_daily = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_month = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -75,17 +75,17 @@ Partial Class SalesPanel
         Me.lbl_daily.TabIndex = 1
         Me.lbl_daily.Text = "300.00 PHP"
         '
-        'Label5
+        'lbl_month
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(989, 381)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(325, 76)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "300.00 PHP"
+        Me.lbl_month.AutoSize = True
+        Me.lbl_month.BackColor = System.Drawing.Color.White
+        Me.lbl_month.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_month.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.lbl_month.Location = New System.Drawing.Point(989, 381)
+        Me.lbl_month.Name = "lbl_month"
+        Me.lbl_month.Size = New System.Drawing.Size(325, 76)
+        Me.lbl_month.TabIndex = 4
+        Me.lbl_month.Text = "300.00 PHP"
         '
         'Label6
         '
@@ -269,7 +269,7 @@ Partial Class SalesPanel
         Me.Controls.Add(Me.btn_monthEarningsDetail)
         Me.Controls.Add(Me.btn_todayEarningsDetail)
         Me.Controls.Add(Me.Guna2PictureBox3)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.lbl_month)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Guna2PictureBox6)
         Me.Controls.Add(Me.lbl_daily)
@@ -301,7 +301,7 @@ Partial Class SalesPanel
 
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_daily As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lbl_month As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox

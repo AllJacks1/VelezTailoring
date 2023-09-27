@@ -13,11 +13,15 @@ Public Class SalesPanel
     End Sub
 
     Private Sub SalesPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-
-        test(lbl_daily)
+        getDailyIncome(lbl_daily)
+        getMonthlyIncome(lbl_month)
     End Sub
 
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lbl_month.Click
 
+    End Sub
+
+    Private Sub lbl_daily_Click(sender As Object, e As EventArgs) Handles lbl_daily.Click
+
+    End Sub
 End Class

@@ -23,7 +23,7 @@
         End If
     End Sub
 
+    Private Sub etc_dtp_ValueChanged(sender As Object, e As EventArgs) Handles etc_dtp.ValueChanged
 
-
-
+    End Sub
 End Class

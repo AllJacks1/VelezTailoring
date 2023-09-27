@@ -17,6 +17,8 @@
         Dim orderIdValue As Integer = Integer.Parse(txt_orderid.Text)
         Dim newpayment As Double = txt_addPayment.Text
         addpaymenttotal(orderIdValue, newpayment)
+        Me.Close()
+
 
     End Sub
 End Class

@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SQLite
 Imports System.Windows.Controls
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Imports Guna.UI2.WinForms
 
 Module Database
@@ -81,21 +82,19 @@ Module Database
         Dim currentDate As DateTime = DateTime.Now
         Dim formattedDate As String = currentDate.ToString("yyyy/MM/dd")
 
+
         Try
             open_conn()
 
             'Insert into customer_tbl and retrieve the auto-incremented customer_id
             Dim sql_command As New SQLiteCommand($"INSERT INTO customer_tbl ('customer_name','customer_number', 'customer_status') VALUES ('{name}','{contact_number}','active'); SELECT last_insert_rowid();", sqlite_conn)
             Dim customer_id As Integer = CInt(sql_command.ExecuteScalar())
-
             'Insert into product_tbl and retrieve the auto-incremented prod_id
             Dim sql_command2 As New SQLiteCommand($"INSERT INTO product_tbl ('prod_type','prod_price') VALUES ('{product_type}','{overall_price}'); SELECT last_insert_rowid();", sqlite_conn)
             Dim prod_id As Integer = CInt(sql_command2.ExecuteScalar())
-
             'Insert into orders_tbl using the retrieved customer_id and product_id
             Dim sql_command3 As New SQLiteCommand($"INSERT INTO orders_tbl ('customer_id', 'prod_id', 'order_status', 'order_payment', 'order_date', 'order_deadline') VALUES ('{customer_id}', '{prod_id}', 'unfulfilled', '{down_payment}', '{formattedDate}', '{estimated_time}')", sqlite_conn)
             sql_command3.ExecuteNonQuery()
-
             MsgBox("TRANSACTION COMPLETE.", vbInformation, "Velez Tailoring")
         Catch ex As SQLiteException
             MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
@@ -274,14 +273,12 @@ Module Database
                         totalPaytextfield.Text = ntotalpay
                         overallPaytextfield.Text = noverallpay
                         orderIdtextfield.Text = nOrderId
-
-
                     Else
                         MessageBox.Show("Order not found in the database.")
                     End If
                 End Using
             End Using
-        Catch ex As Exception
+        Catch ex As SQLiteException
             MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
         Finally
 
@@ -302,7 +299,8 @@ Module Database
                     Using updateCommand As New SQLiteCommand(query2, sqlite_conn)
                         Dim rowsAffected As Integer = updateCommand.ExecuteNonQuery()
                         If rowsAffected > 0 Then
-                            MessageBox.Show("Payment updated successfully.")
+                            MsgBox("PAYMENT UPDATED SUCCESSFULLY!", vbInformation, "Velez Tailoring")
+
                         Else
                             MessageBox.Show("Failed to update payment.")
                         End If
@@ -312,8 +310,12 @@ Module Database
                 End If
             End Using
         End Using
+        updatePaymentStatus(orderIdValue)
+    End Sub
 
+    Public Sub updatePaymentStatus(ByVal orderIdValue As Integer)
         Try
+            open_conn()
             Dim ntotalspay, noverallspay As String
             Dim queryall As String = "SELECT orders_tbl.order_id,orders_tbl.order_id, orders_tbl.order_payment, product_tbl.prod_price " &
              "FROM orders_tbl " &
@@ -332,7 +334,7 @@ Module Database
 
                             Using updateCommand As New SQLiteCommand(query3, sqlite_conn)
                                 Dim rowsAffected As Integer = updateCommand.ExecuteNonQuery()
-
+                                UserControlManager.showOrders()
                             End Using
                         End If
                     Else
@@ -340,22 +342,20 @@ Module Database
                     End If
                 End Using
             End Using
-        Catch ex As Exception
+        Catch ex As SQLiteException
             MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
         Finally
-
+            close_conn()
 
         End Try
-        close_conn()
     End Sub
 
-    Public Sub test(ByVal labeldaily)
+
+    Public Sub getDailyIncome(ByVal labeldaily)
         open_conn()
-
-
         Dim currentDate As DateTime = DateTime.Now
-
         Dim formattedDate As String = currentDate.ToString("yyyy/MM/dd")
+
         Try
             Dim query As String = "SELECT SUM(order_payment) FROM orders_tbl WHERE order_date = '" & formattedDate & "'"
             Using command As New SQLiteCommand(query, sqlite_conn)
@@ -373,22 +373,43 @@ Module Database
                     End If
                 End Using
             End Using
-        Catch ex As Exception
+        Catch ex As SQLiteException
 
             MsgBox("Error: " & ex.Message)
-
-
         Finally
             close_conn()
 
         End Try
-
-
-
-
-
     End Sub
+    Public Sub getMonthlyIncome(ByVal labelMonthly)
+        Try
+            open_conn()
+            Dim currentDate As DateTime = DateTime.Now
+            Dim currentYear As Integer = currentDate.Year
+            Dim currentMonth As Integer = currentDate.Month
 
+            ' Format the current year and month as a string in 'yyyy/MM' format
+            Dim currentYearMonth As String = $"{currentYear:D4}/{currentMonth:D2}"
+
+            Dim sql_command As New SQLiteCommand($"SELECT SUM(order_payment) FROM orders_tbl WHERE order_date LIKE '{currentYearMonth}%'", sqlite_conn)
+            Dim reader As SQLiteDataReader = sql_command.ExecuteReader()
+            If reader.Read() Then
+                If Not reader.IsDBNull(0) Then
+                    Dim sumValue As Double = reader.GetDouble(0)
+                    labelMonthly.Text = "₱" & sumValue.ToString()
+
+                Else
+                    labelMonthly.Text = "₱ 0.00"
+                End If
+            Else
+                MsgBox("No data found for " & currentYearMonth)
+            End If
+        Catch ex As SQLiteException
+            ' Handle any SQLite exceptions here
+        Finally
+            close_conn()
+        End Try
+    End Sub
 
 End Module
 
