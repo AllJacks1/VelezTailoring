@@ -23,11 +23,11 @@ Public Class OrdersPanel
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        Dim choice = MessageBox.Show("Only The Manager can View this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
-        If (choice = 1) Then
-            Form1.Show()
-
-        End If
+        ' Dim choice = MessageBox.Show("Only The Manager can View this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+        'If (choice = 1) Then
+        'Form1.Show()
+        'End If
+        getData()
     End Sub
 
     Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
