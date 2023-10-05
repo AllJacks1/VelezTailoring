@@ -1,8 +1,9 @@
 ﻿Imports System.Data.SQLite
 
 Public Class OrdersPanel
-    Private Sub btn_view_Click(sender As Object, e As EventArgs) Handles btn_view.Click
 
+    Dim login As Form1
+    Private Sub btn_view_Click(sender As Object, e As EventArgs) Handles btn_view.Click
         If display_orderDGV.SelectedCells.Count > 0 Then
             Dim selectedOrderId As Integer
             If Integer.TryParse(display_orderDGV.SelectedCells(0).Value.ToString(), selectedOrderId) Then
@@ -17,26 +18,48 @@ Public Class OrdersPanel
 
 
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
-
         Database.searchOrder(txt_search.Text, display_orderDGV)
-
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        ' Dim choice = MessageBox.Show("Only The Manager can View this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
-        'If (choice = 1) Then
-        'Form1.Show()
-        'End If
-        getData()
+        Dim choice = MessageBox.Show("Only The Manager can Update this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+        If (choice = 1) Then
+            login = New Form1
+            AddHandler login.Disposed, AddressOf login_DisposedUpdate
+            login.Show()
+        End If
     End Sub
 
     Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
 
-        If display_orderDGV.SelectedCells.Count > 0 Then
-            Dim selectedOrderId As Integer = display_orderDGV.SelectedCells(0).Value
-            removeOrder(selectedOrderId)
+        Dim pin As String = "123"
+
+        Dim choice2 As DialogResult = MessageBox.Show("Are you sure you want to remove?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+
+        If (choice2 = DialogResult.OK) Then
+            Dim enteredPin As String = InputBox("Enter PIN:")
+
+            If String.IsNullOrEmpty(enteredPin) Then
+                MessageBox.Show("Operation canceled.")
+            ElseIf (enteredPin = pin) Then
+                removeData()
+            Else
+                MessageBox.Show("Incorrect PIN. Operation canceled.")
+            End If
         Else
-            MessageBox.Show("Invalid order_id value.")
+            MessageBox.Show("Operation canceled.")
+        End If
+
+    End Sub
+
+    Private Sub login_DisposedUpdate(sender As Object, e As EventArgs)
+        If login.DialogResult = DialogResult.OK Then
+            getData()
+        End If
+    End Sub
+    Private Sub login_DisposedRemove(sender As Object, e As EventArgs)
+        If login.DialogResult = DialogResult.OK Then
+            removeData()
         End If
     End Sub
 
@@ -53,6 +76,15 @@ Public Class OrdersPanel
             Else
                 MessageBox.Show("Invalid order_id value.")
             End If
+        End If
+    End Sub
+
+    Public Sub removeData()
+        If display_orderDGV.SelectedCells.Count > 0 Then
+            Dim selectedOrderId As Integer = display_orderDGV.SelectedCells(0).Value
+            removeOrder(selectedOrderId)
+        Else
+            MessageBox.Show("Invalid order_id value.")
         End If
     End Sub
 End Class
