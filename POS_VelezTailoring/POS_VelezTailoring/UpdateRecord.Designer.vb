@@ -92,7 +92,7 @@ Partial Class UpdateRecord
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(1156, 490)
+        Me.Label8.Location = New System.Drawing.Point(1145, 490)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(189, 29)
         Me.Label8.TabIndex = 91
@@ -164,7 +164,7 @@ Partial Class UpdateRecord
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(1150, 376)
+        Me.Label7.Location = New System.Drawing.Point(1145, 376)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(195, 29)
         Me.Label7.TabIndex = 86
@@ -228,7 +228,7 @@ Partial Class UpdateRecord
         Me.txt_price.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_price.ForeColor = System.Drawing.Color.Black
         Me.txt_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_price.Location = New System.Drawing.Point(1175, 297)
+        Me.txt_price.Location = New System.Drawing.Point(1153, 297)
         Me.txt_price.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_price.Name = "txt_price"
         Me.txt_price.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -344,7 +344,7 @@ Partial Class UpdateRecord
         Me.txt_status.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_status.ForeColor = System.Drawing.Color.Black
         Me.txt_status.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_status.Location = New System.Drawing.Point(1150, 191)
+        Me.txt_status.Location = New System.Drawing.Point(1153, 191)
         Me.txt_status.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_status.Name = "txt_status"
         Me.txt_status.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -401,9 +401,9 @@ Partial Class UpdateRecord
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(377, 859)
+        Me.PictureBox1.Size = New System.Drawing.Size(382, 859)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 72
         Me.PictureBox1.TabStop = False

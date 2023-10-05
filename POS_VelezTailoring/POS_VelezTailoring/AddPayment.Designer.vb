@@ -47,7 +47,7 @@ Partial Class AddPayment
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(301, 507)
+        Me.PictureBox1.Size = New System.Drawing.Size(337, 507)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
@@ -62,7 +62,7 @@ Partial Class AddPayment
         Me.btn_save.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btn_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.btn_save.ForeColor = System.Drawing.Color.White
-        Me.btn_save.Location = New System.Drawing.Point(579, 402)
+        Me.btn_save.Location = New System.Drawing.Point(628, 402)
         Me.btn_save.Name = "btn_save"
         Me.btn_save.Size = New System.Drawing.Size(207, 93)
         Me.btn_save.TabIndex = 64
@@ -73,7 +73,7 @@ Partial Class AddPayment
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(322, 303)
+        Me.Label2.Location = New System.Drawing.Point(371, 303)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(211, 29)
         Me.Label2.TabIndex = 63
@@ -93,7 +93,7 @@ Partial Class AddPayment
         Me.txt_totalPayment.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_totalPayment.ForeColor = System.Drawing.Color.Black
         Me.txt_totalPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_totalPayment.Location = New System.Drawing.Point(327, 242)
+        Me.txt_totalPayment.Location = New System.Drawing.Point(376, 242)
         Me.txt_totalPayment.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_totalPayment.Name = "txt_totalPayment"
         Me.txt_totalPayment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -107,7 +107,7 @@ Partial Class AddPayment
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(322, 207)
+        Me.Label1.Location = New System.Drawing.Point(371, 207)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(296, 29)
         Me.Label1.TabIndex = 61
@@ -127,7 +127,7 @@ Partial Class AddPayment
         Me.txt_overallPayment.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_overallPayment.ForeColor = System.Drawing.Color.Black
         Me.txt_overallPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_overallPayment.Location = New System.Drawing.Point(327, 338)
+        Me.txt_overallPayment.Location = New System.Drawing.Point(376, 338)
         Me.txt_overallPayment.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_overallPayment.Name = "txt_overallPayment"
         Me.txt_overallPayment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -146,7 +146,7 @@ Partial Class AddPayment
         Me.btn_cancel.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btn_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.btn_cancel.Location = New System.Drawing.Point(327, 402)
+        Me.btn_cancel.Location = New System.Drawing.Point(376, 402)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(207, 93)
         Me.btn_cancel.TabIndex = 59
@@ -157,7 +157,7 @@ Partial Class AddPayment
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(322, 108)
+        Me.Label7.Location = New System.Drawing.Point(371, 108)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(173, 29)
         Me.Label7.TabIndex = 58
@@ -177,7 +177,7 @@ Partial Class AddPayment
         Me.txt_addPayment.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_addPayment.ForeColor = System.Drawing.Color.Black
         Me.txt_addPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_addPayment.Location = New System.Drawing.Point(327, 146)
+        Me.txt_addPayment.Location = New System.Drawing.Point(376, 146)
         Me.txt_addPayment.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_addPayment.Name = "txt_addPayment"
         Me.txt_addPayment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -211,7 +211,7 @@ Partial Class AddPayment
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(322, 12)
+        Me.Label3.Location = New System.Drawing.Point(371, 12)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 29)
         Me.Label3.TabIndex = 67
@@ -231,7 +231,7 @@ Partial Class AddPayment
         Me.txt_orderid.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.txt_orderid.ForeColor = System.Drawing.Color.Black
         Me.txt_orderid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_orderid.Location = New System.Drawing.Point(327, 47)
+        Me.txt_orderid.Location = New System.Drawing.Point(376, 47)
         Me.txt_orderid.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txt_orderid.Name = "txt_orderid"
         Me.txt_orderid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)

@@ -38,7 +38,7 @@ Module Database
     End Sub
 
     'LOGIN
-    Public Sub user_login(ByVal username As String, ByVal password As String)
+    Public Function user_login(ByVal username As String, ByVal password As String)
         Try
             open_conn()
             Dim sql_command As New SQLiteCommand($"SELECT * FROM user_tbl WHERE `user_name` = '{username}' And `user_password` = '{password}';", sqlite_conn)
@@ -48,17 +48,19 @@ Module Database
                 MessageBox.Show("Welcome user: " & reader.GetString(1), "Velez Tailoring")
                 Dashboard.Show()
                 Form1.Close()
+                Return 1
             Else
                 MsgBox("YOUR CREDENTIALS DON'T MATCH AN" & vbCrLf & "ACCOUNT IN OUR SYSTEM.", vbCritical, "Velez Tailoring")
 
+                Return 2
             End If
         Catch ex As SQLiteException
             MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
         Finally
             close_conn()
         End Try
-
-    End Sub
+        Return 0
+    End Function
 
     'REGISTER ACCOUNT
     Public Sub user_register(ByVal username As String, ByVal password As String)

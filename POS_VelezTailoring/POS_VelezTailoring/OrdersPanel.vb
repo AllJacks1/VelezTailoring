@@ -23,18 +23,11 @@ Public Class OrdersPanel
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
+        Dim choice = MessageBox.Show("Only The Manager can View this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+        If (choice = 1) Then
+            Form1.Show()
 
-        If display_orderDGV.SelectedCells.Count > 0 Then
-            Dim selectedOrderId As Integer
-            If Integer.TryParse(display_orderDGV.SelectedCells(0).Value.ToString(), selectedOrderId) Then
-                Dim updateRecord = New UpdateRecord
-                updateRecord.Show()
-                SetOrderId(selectedOrderId, updateRecord.txt_orderid, updateRecord.txt_status, updateRecord.txt_name, updateRecord.txt_date, updateRecord.txt_dead, updateRecord.txt_price, updateRecord.txt_description, updateRecord.txt_pay, updateRecord.txt_balance)
-            Else
-                MessageBox.Show("Invalid order_id value.")
-            End If
         End If
-
     End Sub
 
     Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
@@ -45,6 +38,18 @@ Public Class OrdersPanel
         Else
             MessageBox.Show("Invalid order_id value.")
         End If
+    End Sub
 
+    Public Sub getData()
+        If display_orderDGV.SelectedCells.Count > 0 Then
+            Dim selectedOrderId As Integer
+            If Integer.TryParse(display_orderDGV.SelectedCells(0).Value.ToString(), selectedOrderId) Then
+                Dim updateRecord = New UpdateRecord
+                updateRecord.Show()
+                SetOrderId(selectedOrderId, updateRecord.txt_orderid, updateRecord.txt_status, updateRecord.txt_name, updateRecord.txt_date, updateRecord.txt_dead, updateRecord.txt_price, updateRecord.txt_description, updateRecord.txt_pay, updateRecord.txt_balance)
+            Else
+                MessageBox.Show("Invalid order_id value.")
+            End If
+        End If
     End Sub
 End Class

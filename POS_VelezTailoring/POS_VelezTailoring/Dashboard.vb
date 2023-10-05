@@ -20,5 +20,7 @@
         UserControlManager.showTransactions()
     End Sub
 
-
+    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserControlManager.showSales()
+    End Sub
 End Class

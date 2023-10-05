@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SalesPanel
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class SalesPanel
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SalesPanel))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,8 +37,6 @@ Partial Class SalesPanel
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CirclePictureBox4 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2PictureBox6 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.btn_todayEarningsDetail = New Guna.UI2.WinForms.Guna2Button()
-        Me.btn_monthEarningsDetail = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,9 +64,9 @@ Partial Class SalesPanel
         'lbl_daily
         '
         Me.lbl_daily.AutoSize = True
-        Me.lbl_daily.BackColor = System.Drawing.Color.White
+        Me.lbl_daily.BackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.lbl_daily.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_daily.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.lbl_daily.ForeColor = System.Drawing.Color.White
         Me.lbl_daily.Location = New System.Drawing.Point(221, 381)
         Me.lbl_daily.Name = "lbl_daily"
         Me.lbl_daily.Size = New System.Drawing.Size(325, 76)
@@ -78,9 +76,9 @@ Partial Class SalesPanel
         'lbl_month
         '
         Me.lbl_month.AutoSize = True
-        Me.lbl_month.BackColor = System.Drawing.Color.White
+        Me.lbl_month.BackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.lbl_month.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_month.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.lbl_month.ForeColor = System.Drawing.Color.White
         Me.lbl_month.Location = New System.Drawing.Point(989, 381)
         Me.lbl_month.Name = "lbl_month"
         Me.lbl_month.Size = New System.Drawing.Size(325, 76)
@@ -227,47 +225,11 @@ Partial Class SalesPanel
         Me.Guna2PictureBox6.TabStop = False
         Me.Guna2PictureBox6.UseTransparentBackground = True
         '
-        'btn_todayEarningsDetail
-        '
-        Me.btn_todayEarningsDetail.BackColor = System.Drawing.Color.White
-        Me.btn_todayEarningsDetail.BorderRadius = 5
-        Me.btn_todayEarningsDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btn_todayEarningsDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btn_todayEarningsDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btn_todayEarningsDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btn_todayEarningsDetail.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.btn_todayEarningsDetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.btn_todayEarningsDetail.ForeColor = System.Drawing.Color.White
-        Me.btn_todayEarningsDetail.Location = New System.Drawing.Point(186, 599)
-        Me.btn_todayEarningsDetail.Name = "btn_todayEarningsDetail"
-        Me.btn_todayEarningsDetail.Size = New System.Drawing.Size(395, 58)
-        Me.btn_todayEarningsDetail.TabIndex = 16
-        Me.btn_todayEarningsDetail.Text = "See Additional Details"
-        '
-        'btn_monthEarningsDetail
-        '
-        Me.btn_monthEarningsDetail.BackColor = System.Drawing.Color.White
-        Me.btn_monthEarningsDetail.BorderRadius = 5
-        Me.btn_monthEarningsDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btn_monthEarningsDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btn_monthEarningsDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btn_monthEarningsDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btn_monthEarningsDetail.FillColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.btn_monthEarningsDetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.btn_monthEarningsDetail.ForeColor = System.Drawing.Color.White
-        Me.btn_monthEarningsDetail.Location = New System.Drawing.Point(805, 599)
-        Me.btn_monthEarningsDetail.Name = "btn_monthEarningsDetail"
-        Me.btn_monthEarningsDetail.Size = New System.Drawing.Size(693, 58)
-        Me.btn_monthEarningsDetail.TabIndex = 17
-        Me.btn_monthEarningsDetail.Text = "See Additional Details"
-        '
         'SalesPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Controls.Add(Me.btn_monthEarningsDetail)
-        Me.Controls.Add(Me.btn_todayEarningsDetail)
         Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.lbl_month)
         Me.Controls.Add(Me.Label6)
@@ -313,6 +275,4 @@ Partial Class SalesPanel
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2CirclePictureBox4 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Guna2PictureBox6 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents btn_todayEarningsDetail As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btn_monthEarningsDetail As Guna.UI2.WinForms.Guna2Button
 End Class

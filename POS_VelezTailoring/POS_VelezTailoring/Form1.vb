@@ -10,6 +10,7 @@
 
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
         Dim username, password As String
+        Dim isValid As Integer
         username = username_txt.Text
         password = password_txt.Text
 
@@ -18,11 +19,13 @@
         ElseIf String.IsNullOrEmpty(password_txt.Text) Then
             MsgBox("Enter your password!", vbCritical, "Velez Tailoring")
         Else
-            user_login(username, password)
+            isValid = user_login(username, password)
             username_txt.Clear()
             password_txt.Clear()
         End If
 
+        If isValid = 1 Then
+        End If
     End Sub
 
 End Class
