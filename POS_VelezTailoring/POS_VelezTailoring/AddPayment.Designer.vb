@@ -98,6 +98,7 @@ Partial Class AddPayment
         Me.txt_totalPayment.Name = "txt_totalPayment"
         Me.txt_totalPayment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_totalPayment.PlaceholderText = ""
+        Me.txt_totalPayment.ReadOnly = True
         Me.txt_totalPayment.SelectedText = ""
         Me.txt_totalPayment.Size = New System.Drawing.Size(459, 55)
         Me.txt_totalPayment.TabIndex = 62
@@ -132,6 +133,7 @@ Partial Class AddPayment
         Me.txt_overallPayment.Name = "txt_overallPayment"
         Me.txt_overallPayment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_overallPayment.PlaceholderText = ""
+        Me.txt_overallPayment.ReadOnly = True
         Me.txt_overallPayment.SelectedText = ""
         Me.txt_overallPayment.Size = New System.Drawing.Size(459, 55)
         Me.txt_overallPayment.TabIndex = 60

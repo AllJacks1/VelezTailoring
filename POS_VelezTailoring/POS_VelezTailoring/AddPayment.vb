@@ -15,10 +15,24 @@
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
         Dim orderIdValue As Integer = Integer.Parse(txt_orderid.Text)
-        Dim newpayment As Double = txt_addPayment.Text
+        Dim newpayment As Double
+
+
+        Try
+            newpayment = Double.Parse(txt_addPayment.Text)
+        Catch ex As FormatException
+
+            MsgBox("PAYMENT MUST BE A NUMBER ", vbCritical, "VELEZ TAILORING")
+
+            txt_addPayment.Clear()
+            Return
+        End Try
+
+        ' Add the payment total.
         addpaymenttotal(orderIdValue, newpayment)
+
+        ' Close the form.
         Me.Close()
-
-
     End Sub
+
 End Class

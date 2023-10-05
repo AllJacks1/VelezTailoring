@@ -5,6 +5,7 @@ Imports Guna.UI2.WinForms
 
 Module Database
 
+
     Public sqlite_conn As New SQLiteConnection("Data Source = " & Application.StartupPath & "\user_tbl.db")
     Dim adapter As SQLiteDataAdapter
     Dim dsset As New DataSet
@@ -115,12 +116,14 @@ Module Database
             sql_command.ExecuteNonQuery()
             Dim sql_command2 As New SQLiteCommand($"Update product_tbl SET prod_type = '{description}', prod_price='{overallPrice}' 
             WHERE prod_id = (SELECT prod_id FROM orders_tbl WHERE order_id = '{orderIdValue}'); ", sqlite_conn)
+
             sql_command2.ExecuteNonQuery()
             Dim sql_command3 As New SQLiteCommand($"UPDATE orders_Tbl SET order_status = '{orderStatus}', order_payment = '{orderPayment}', order_deadline = '{deadline}' 
             WHERE order_id = '{orderIdValue}' ", sqlite_conn)
             sql_command3.ExecuteNonQuery()
             MsgBox("ORDER UPDATED.", vbInformation, "Velez Tailoring")
             UserControlManager.showOrders()
+
 
         Catch ex As SQLiteException
             MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
