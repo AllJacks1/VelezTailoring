@@ -49,10 +49,11 @@ Module Database
                 MessageBox.Show("Welcome user: " & reader.GetString(1), "Velez Tailoring")
                 Dashboard.Show()
                 Form1.Close()
+                close_conn()
                 Return 1
             Else
                 MsgBox("YOUR CREDENTIALS DON'T MATCH AN" & vbCrLf & "ACCOUNT IN OUR SYSTEM.", vbCritical, "Velez Tailoring")
-
+                close_conn()
                 Return 2
             End If
         Catch ex As SQLiteException
@@ -88,7 +89,6 @@ Module Database
 
         Try
             open_conn()
-
             'Insert into customer_tbl and retrieve the auto-incremented customer_id
             Dim sql_command As New SQLiteCommand($"INSERT INTO customer_tbl ('customer_name','customer_number', 'customer_status') VALUES ('{name}','{contact_number}','active'); SELECT last_insert_rowid();", sqlite_conn)
             Dim customer_id As Integer = CInt(sql_command.ExecuteScalar())
@@ -286,7 +286,6 @@ Module Database
         Catch ex As SQLiteException
             MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
         Finally
-
             close_conn()
         End Try
     End Sub
@@ -315,6 +314,7 @@ Module Database
                 End If
             End Using
         End Using
+        close_conn()
         updatePaymentStatus(orderIdValue)
     End Sub
 
@@ -351,7 +351,6 @@ Module Database
             MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
         Finally
             close_conn()
-
         End Try
     End Sub
 

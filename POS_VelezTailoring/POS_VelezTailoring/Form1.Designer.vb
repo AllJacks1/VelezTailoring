@@ -27,7 +27,6 @@ Partial Class Form1
         Me.login_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.password_txt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.username_txt = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.fpassword_lbl = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -45,7 +44,6 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.login_btn)
         Me.Panel1.Controls.Add(Me.password_txt)
         Me.Panel1.Controls.Add(Me.username_txt)
-        Me.Panel1.Controls.Add(Me.fpassword_lbl)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -111,17 +109,6 @@ Partial Class Form1
         Me.username_txt.SelectedText = ""
         Me.username_txt.Size = New System.Drawing.Size(392, 40)
         Me.username_txt.TabIndex = 9
-        '
-        'fpassword_lbl
-        '
-        Me.fpassword_lbl.AutoSize = True
-        Me.fpassword_lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fpassword_lbl.ForeColor = System.Drawing.SystemColors.Control
-        Me.fpassword_lbl.Location = New System.Drawing.Point(444, 217)
-        Me.fpassword_lbl.Name = "fpassword_lbl"
-        Me.fpassword_lbl.Size = New System.Drawing.Size(124, 16)
-        Me.fpassword_lbl.TabIndex = 8
-        Me.fpassword_lbl.Text = "Forgot Password"
         '
         'PictureBox3
         '
@@ -202,7 +189,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents fpassword_lbl As Label
     Friend WithEvents password_txt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents username_txt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents login_btn As Guna.UI2.WinForms.Guna2Button

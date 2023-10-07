@@ -63,27 +63,27 @@ Partial Class SalesPanel
         '
         'lbl_daily
         '
-        Me.lbl_daily.AutoSize = True
         Me.lbl_daily.BackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.lbl_daily.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_daily.ForeColor = System.Drawing.Color.White
-        Me.lbl_daily.Location = New System.Drawing.Point(221, 381)
+        Me.lbl_daily.Location = New System.Drawing.Point(189, 381)
         Me.lbl_daily.Name = "lbl_daily"
-        Me.lbl_daily.Size = New System.Drawing.Size(325, 76)
+        Me.lbl_daily.Size = New System.Drawing.Size(395, 154)
         Me.lbl_daily.TabIndex = 1
         Me.lbl_daily.Text = "300.00 PHP"
+        Me.lbl_daily.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbl_month
         '
-        Me.lbl_month.AutoSize = True
         Me.lbl_month.BackColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.lbl_month.Font = New System.Drawing.Font("Bernard MT Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_month.ForeColor = System.Drawing.Color.White
-        Me.lbl_month.Location = New System.Drawing.Point(989, 381)
+        Me.lbl_month.Location = New System.Drawing.Point(808, 381)
         Me.lbl_month.Name = "lbl_month"
-        Me.lbl_month.Size = New System.Drawing.Size(325, 76)
+        Me.lbl_month.Size = New System.Drawing.Size(700, 154)
         Me.lbl_month.TabIndex = 4
         Me.lbl_month.Text = "300.00 PHP"
+        Me.lbl_month.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '

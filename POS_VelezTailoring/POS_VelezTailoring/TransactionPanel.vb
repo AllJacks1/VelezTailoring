@@ -10,16 +10,17 @@
         prod_type = prod_typetxt.Text
 
         If String.IsNullOrEmpty(customer_nametxt.Text) Or String.IsNullOrEmpty(customer_numtxt.Text) Or String.IsNullOrEmpty(etc_dtp.Text) Or
-            String.IsNullOrEmpty(overall_pricetxt.Text) Or String.IsNullOrEmpty(down_paymenttxt.Text) Or String.IsNullOrEmpty(prod_typetxt.Text) Then
-            MsgBox("Please fill up all the fields NIGGA!", vbCritical, "VELEZ TAILORING")
-        ElseIf Not IsNumeric(overall_price) Or Not IsNumeric(overall_price) Or Not IsNumeric(customer_numtxt) Then
-            MsgBox("INVALID INPUT! MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
-            customer_nametxt.Clear()
+           String.IsNullOrEmpty(overall_pricetxt.Text) Or String.IsNullOrEmpty(down_paymenttxt.Text) Or String.IsNullOrEmpty(prod_typetxt.Text) Then
+            MsgBox("PLEASE FILL-UP ALL THE FIELDS!", vbCritical, "VELEZ TAILORING")
+        ElseIf Not IsNumeric(customer_number) Then
+            MsgBox("CUSTOMER NUMBER MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
             customer_numtxt.Clear()
-            etc_dtp.ResetText()
+        ElseIf Not IsNumeric(overall_price) Then
+            MsgBox("OVERALL PRICE MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
             overall_pricetxt.Clear()
+        ElseIf Not IsNumeric(down_payment) Then
+            MsgBox("DOWNYPAYMENT MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
             down_paymenttxt.Clear()
-            prod_typetxt.Clear()
         Else
             addOrders(customer_name, customer_number, prod_type, overall_price, down_payment, estimated_time)
             customer_nametxt.Clear()

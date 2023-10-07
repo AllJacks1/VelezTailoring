@@ -1,6 +1,7 @@
 ﻿Public Class Dashboard
     Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click
         Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub btn_minimize_Click(sender As Object, e As EventArgs) Handles btn_minimize.Click

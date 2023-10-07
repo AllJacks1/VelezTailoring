@@ -32,19 +32,14 @@ Public Class OrdersPanel
 
     Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
 
-        Dim pin As String = "123"
-
         Dim choice2 As DialogResult = MessageBox.Show("Are you sure you want to remove?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
 
         If (choice2 = DialogResult.OK) Then
-            Dim enteredPin As String = InputBox("Enter PIN:")
-
-            If String.IsNullOrEmpty(enteredPin) Then
-                MessageBox.Show("Operation canceled.")
-            ElseIf (enteredPin = pin) Then
-                removeData()
-            Else
-                MessageBox.Show("Incorrect PIN. Operation canceled.")
+            Dim choice = MessageBox.Show("Only The Manager can Delete this Information. You need to login your credentials!", "Proper Credentials Needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+            If (choice = 1) Then
+                login = New Form1
+                AddHandler login.Disposed, AddressOf login_DisposedRemove
+                login.Show()
             End If
         Else
             MessageBox.Show("Operation canceled.")
