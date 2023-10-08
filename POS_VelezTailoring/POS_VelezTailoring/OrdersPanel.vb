@@ -65,9 +65,8 @@ Public Class OrdersPanel
                 Dim updateRecord = New UpdateRecord
                 updateRecord.Show()
                 SetOrderId(selectedOrderId, updateRecord.txt_orderid, updateRecord.txt_status, updateRecord.txt_name, updateRecord.txt_date, updateRecord.txt_dead, updateRecord.txt_price, updateRecord.txt_description, updateRecord.txt_pay, updateRecord.txt_balance)
-                Dim desc As String
-                desc = updateRecord.txt_description.Text
-                MsgBox(desc)
+                updateRecord.setInitialDescription(updateRecord.txt_description.Text)
+                updateRecord.setInitialOverallPrice(updateRecord.txt_price.Text)
             Else
                 MessageBox.Show("Invalid order_id value.")
             End If
