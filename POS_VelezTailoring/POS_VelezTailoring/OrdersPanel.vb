@@ -11,7 +11,7 @@ Public Class OrdersPanel
                 viewRecord.Show()
                 SetOrderId(selectedOrderId, viewRecord.txt_orderid, viewRecord.txt_status, viewRecord.txt_name, viewRecord.txt_date, viewRecord.txt_dead, viewRecord.txt_price, viewRecord.txt_description, viewRecord.txt_pay, viewRecord.txt_balance)
             Else
-                MessageBox.Show("Invalid order_id value.")
+                MessageBox.Show("Invalid order_id value.", "VELEZ CREATIONS")
             End If
         End If
     End Sub
@@ -42,7 +42,7 @@ Public Class OrdersPanel
                 login.Show()
             End If
         Else
-            MessageBox.Show("Operation canceled.")
+            MessageBox.Show("Operation canceled.", "VELEZ CREATIONS")
         End If
 
     End Sub
@@ -68,7 +68,7 @@ Public Class OrdersPanel
                 updateRecord.setInitialDescription(updateRecord.txt_description.Text)
                 updateRecord.setInitialOverallPrice(updateRecord.txt_price.Text)
             Else
-                MessageBox.Show("Invalid order_id value.")
+                MessageBox.Show("Invalid order_id value.", "VELEZ CREATIONS")
             End If
         End If
     End Sub
@@ -78,7 +78,7 @@ Public Class OrdersPanel
             Dim selectedOrderId As Integer = display_orderDGV.SelectedCells(0).Value
             removeOrder(selectedOrderId)
         Else
-            MessageBox.Show("Invalid order_id value.")
+            MessageBox.Show("Invalid order_id value.", "VELEZ CREATIONS")
         End If
     End Sub
 End Class

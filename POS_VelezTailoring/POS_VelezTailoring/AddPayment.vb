@@ -6,7 +6,7 @@
 
     Private Sub pb_exit_Click(sender As Object, e As EventArgs) Handles pb_exit.Click
         Me.Close()
-
+        Me.Dispose()
     End Sub
 
     Private Sub pb_minimize_Click(sender As Object, e As EventArgs) Handles pb_minimize.Click
@@ -17,13 +17,10 @@
         Dim orderIdValue As Integer = Integer.Parse(txt_orderid.Text)
         Dim newpayment As Double
 
-
         Try
             newpayment = Double.Parse(txt_addPayment.Text)
         Catch ex As FormatException
-
-            MsgBox("PAYMENT MUST BE A NUMBER ", vbCritical, "VELEZ TAILORING")
-
+            MsgBox("PAYMENT MUST BE A NUMBER ", vbCritical, "VELEZ CREATIONS")
             txt_addPayment.Clear()
             Return
         End Try

@@ -18,17 +18,17 @@ Public Class Form1
         password = password_txt.Text
 
         If String.IsNullOrEmpty(username_txt.Text) Then
-            MsgBox("Enter your username!", vbCritical, "Velez Tailoring")
+            MsgBox("Enter your username!", vbCritical, "VELEZ CREATIONS")
         ElseIf String.IsNullOrEmpty(password_txt.Text) Then
-            MsgBox("Enter your password!", vbCritical, "Velez Tailoring")
+            MsgBox("Enter your password!", vbCritical, "VELEZ CREATIONS")
         Else
             If username.Equals("admin") And password.Equals("password123") Then
-                MsgBox("Log-in Successful", vbInformation, "Velez Tailoring")
+                MsgBox("Log-in Successful", vbInformation, "VELEZ CREATIONS")
                 isValid = True
                 Me.DialogResult = DialogResult.OK
                 Me.Dispose()
             Else
-                MsgBox("YOUR CREDENTIALS DON'T MATCH AN" & vbCrLf & "ACCOUNT IN OUR SYSTEM.", vbCritical, "Velez Tailoring")
+                MsgBox("YOUR CREDENTIALS DON'T MATCH AN" & vbCrLf & "ACCOUNT IN OUR SYSTEM.", vbCritical, "VELEZ CREATIONS")
             End If
             username_txt.Clear()
             password_txt.Clear()

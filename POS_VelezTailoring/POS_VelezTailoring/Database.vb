@@ -189,7 +189,7 @@ Module Database
             dgTable.DataSource = table
             adapter.Fill(table)
         Catch ex As SQLiteException
-            MsgBox("Error: " & ex.Message, vbCritical, "Velez Tailoring")
+            MsgBox("Error: " & ex.Message, vbCritical, "VELEZ CREATIONS")
 
         Finally
             close_conn()
@@ -246,7 +246,7 @@ Module Database
 
                     Else
 
-                        MessageBox.Show("No data found.")
+                        MessageBox.Show("No data found.", "VELEZ CREATIONS")
                     End If
                 End Using
             End Using
@@ -284,7 +284,7 @@ Module Database
                 End Using
             End Using
         Catch ex As SQLiteException
-            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
+            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message, "VELEZ CREATIONS")
         Finally
             close_conn()
         End Try
@@ -306,11 +306,11 @@ Module Database
                             MsgBox("PAYMENT UPDATED SUCCESSFULLY!", vbInformation, "Velez Tailoring")
 
                         Else
-                            MessageBox.Show("Failed to update payment.")
+                            MessageBox.Show("Failed to update payment.", "VELEZ CREATIONS")
                         End If
                     End Using
                 Else
-                    MessageBox.Show("Order not found in the database.")
+                    MessageBox.Show("Order not found in the database.", "VELEZ CREATIONS")
                 End If
             End Using
         End Using
@@ -343,12 +343,12 @@ Module Database
                             End Using
                         End If
                     Else
-                        MessageBox.Show("Order not found in the database.")
+                        MessageBox.Show("Order not found in the database.", "VELEZ CREATIONS")
                     End If
                 End Using
             End Using
         Catch ex As SQLiteException
-            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message)
+            MessageBox.Show("An error occurred while retrieving payment data: " & ex.Message, "VELEZ CREATIONS")
         Finally
             close_conn()
         End Try
@@ -373,16 +373,14 @@ Module Database
                             labeldaily.text = "₱ 0.00"
                         End If
                     Else
-                        MsgBox("No data found for " & formattedDate)
+                        MsgBox("No data found for " & formattedDate, "VELEZ CREATIONS")
                     End If
                 End Using
             End Using
         Catch ex As SQLiteException
-
-            MsgBox("Error: " & ex.Message)
+            MsgBox("Error: " & ex.Message, "VELEZ CREATIONS")
         Finally
             close_conn()
-
         End Try
     End Sub
     Public Sub getMonthlyIncome(ByVal labelMonthly)
@@ -406,10 +404,11 @@ Module Database
                     labelMonthly.Text = "₱ 0.00"
                 End If
             Else
-                MsgBox("No data found for " & currentYearMonth)
+                MsgBox("No data found for " & currentYearMonth, "VELEZ CREATIONS")
             End If
         Catch ex As SQLiteException
             ' Handle any SQLite exceptions here
+            MsgBox("Error: " & ex.Message, "VELEZ CREATIONS")
         Finally
             close_conn()
         End Try

@@ -11,15 +11,15 @@
 
         If String.IsNullOrEmpty(customer_nametxt.Text) Or String.IsNullOrEmpty(customer_numtxt.Text) Or String.IsNullOrEmpty(etc_dtp.Text) Or
            String.IsNullOrEmpty(overall_pricetxt.Text) Or String.IsNullOrEmpty(down_paymenttxt.Text) Or String.IsNullOrEmpty(prod_typetxt.Text) Then
-            MsgBox("PLEASE FILL-UP ALL THE FIELDS!", vbCritical, "VELEZ TAILORING")
+            MsgBox("PLEASE FILL-UP ALL THE FIELDS!", vbCritical, "VELEZ CREATIONS")
         ElseIf Not IsNumeric(customer_number) Then
-            MsgBox("CUSTOMER NUMBER MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
+            MsgBox("CUSTOMER NUMBER MUST BE A NUMBER", vbCritical, "VELEZ CREATIONS")
             customer_numtxt.Clear()
         ElseIf Not IsNumeric(overall_price) Then
-            MsgBox("OVERALL PRICE MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
+            MsgBox("OVERALL PRICE MUST BE A NUMBER", vbCritical, "VELEZ CREATIONS")
             overall_pricetxt.Clear()
         ElseIf Not IsNumeric(down_payment) Then
-            MsgBox("DOWNYPAYMENT MUST BE A NUMBER", vbCritical, "VELEZ TAILORING")
+            MsgBox("DOWNYPAYMENT MUST BE A NUMBER", vbCritical, "VELEZ CREATIONS")
             down_paymenttxt.Clear()
         Else
             addOrders(customer_name, customer_number, prod_type, overall_price, down_payment, estimated_time)
@@ -30,9 +30,5 @@
             down_paymenttxt.Clear()
             prod_typetxt.Clear()
         End If
-    End Sub
-
-    Private Sub etc_dtp_ValueChanged(sender As Object, e As EventArgs) Handles etc_dtp.ValueChanged
-
     End Sub
 End Class
